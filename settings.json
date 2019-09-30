@@ -1,66 +1,45 @@
 {
     "terminal.integrated.fontSize": 13,
-
-
     "editor.fontSize": 19,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'FiraCode-Retina', Menlo, monospace",
-
-
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 750,
-    
     // "php-cs-fixer.formatHtml": true,
     // "php-cs-fixer.onsave": true,
     // "php-cs-fixer.autoFixByBracket": false,
     // "php-cs-fixer.executablePath": "/usr/local/bin/php-cs-fixer",
-
-
     "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
-    
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
-    
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1,
     "workbench.startupEditor": "newUntitledFile",
-
     "phpcs.standard": "PSR2",
     "python.pythonPath": "/usr/local/bin/python3",
-
     "workbench.iconTheme": "material-icon-theme",
-
-
     // "svgviewer.enableautopreview": true,
     // "svgviewer.previewcolumn": "Active",
     "material-icon-theme.folders.theme": "specific",
-
-
     // "editor.codeActionsOnSave": {
     //     "source.organizeImports": true,
     // },
-
-
     // "files.associations": { 
     //     "*.blade.php": "html",
     // },
-
-
     // "blade.format.enable": true,
-
     "editor.tabSize": 2,
-
     "editor.formatOnSave": true,
     "eslint.autoFixOnSave": true,
-
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-
     "javascript.updateImportsOnFileMove.enabled": "always",
-
-
     "workbench.colorTheme": "Readable Code Material Darker",
     "liveServer.settings.donotShowInfoMsg": true,
-
-    
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    "git.autofetch": true,
 }
