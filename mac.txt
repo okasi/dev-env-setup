@@ -1,0 +1,80 @@
+https://brew.sh/
+
+https://medium.com/swlh/power-up-your-terminal-using-oh-my-zsh-iterm2-c5a03f73a9fb
+
+https://gist.github.com/kevin-smets/8568070
+
+brew install fish
+chsh -s /usr/local/bin/fish
+MesloLGMDZ Nerd Font
+RegularForPowerline
+Size 14
+
+https://gist.github.com/kevin-smets/8568070
+
+
+brew cask install mounty
+
+brew install node@10
+
+
+npm install -g express-generator
+npm install -g nodemon
+npm install -g expo-cli
+npm install -g serve
+
+
+PHP stuff:
+brew install composer
+brew install php
+
+
+Apps:
+
+balenaEtcher.app
+
+CleanMyMac X.app
+
+Disk Inventory X.app
+
+CyberDuck.app
+
+Keka.app
+
+Lightshot Screenshot.app
+
+OnyX.app
+
+Insomnia.app
+
+qbittorrent.app
+
+SD Card Formatter.app
+
+Slack.app
+
+Spectacle.app
+
+TeamViewer.app
+
+Visual Studio Code.app
+
+ImageOptim.app
+
+Waterfox.app [Testing firefox]
+
+
+
+If you need adobe illustrator & after effects go for the 2015.3 version
+
+No delay dock:
+defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+
+Disable mouse acceleration:
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
+
+More mouse options:
+brew cask install steermouse
+
+For normal scroll w/ mouse:
+brew cask install smoothscroll
