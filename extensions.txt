@@ -4,11 +4,13 @@ code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension esbenp.prettier-vscode
+code --install-extension HookyQR.beautify
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.typescript-javascript-grammar
+code --install-extension onecentlin.laravel-blade
 code --install-extension petemill.theme-readable-material-darker
 code --install-extension pflannery.vscode-versionlens
 code --install-extension PKief.material-icon-theme
-code --install-extension ritwickdey.LiveServer
 code --install-extension steoates.autoimport
 
 //Disabled
