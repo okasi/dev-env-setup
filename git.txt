@@ -1,3 +1,4 @@
 ssh-keygen -m PEM -t rsa
-git config --global user.email johndoe@example.com
-git config --global user.name john-d
+pbcopy < ~/.ssh/id_rsa.pub
+git config --global user.email "johndoe@example.com"
+git config --global user.name "john-d"
