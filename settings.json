@@ -76,6 +76,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "prettier.singleQuote": true,
+    "vetur.validation.template": false,
 
     // Linting
     "eslint.validate": [
@@ -91,5 +92,6 @@
         "source.fixAll": true
     },
     "eslint.enable": true,
+    "python.pythonPath": "/usr/local/bin/python3",
 
 }
