@@ -6,9 +6,13 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
+code --install-extension jtladeiras.vscode-inline-sql
 code --install-extension mgmcdermott.vscode-language-babel
 code --install-extension mikestead.dotenv
+code --install-extension ms-python.python
 code --install-extension ms-vscode.typescript-javascript-grammar
+code --install-extension mtxr.sqltools
+code --install-extension octref.vetur
 code --install-extension petemill.theme-readable-material-darker
 code --install-extension pflannery.vscode-versionlens
 code --install-extension PKief.material-icon-theme
