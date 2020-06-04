@@ -1,4 +1,4 @@
-Stock Terminal Theming:
+##Stock Terminal Theming:
 ```
 xcode-select —-install
 
