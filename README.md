@@ -1,5 +1,3 @@
-export vscode extensions w/
+My development environment setup
 
-```
-code --list-extensions | xargs -L 1 echo code --install-extension
-```
+Prefer macOS because Unix based
