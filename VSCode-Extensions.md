@@ -1,6 +1,7 @@
 Get list of VSCode extensions with:
 code --list-extensions | xargs -L 1 echo code --install-extension
 
+```
 code --install-extension bbenoist.Nix
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension christian-kohler.path-intellisense
@@ -24,3 +25,4 @@ code --install-extension rbbit.typescript-hero
 code --install-extension Tyriar.sort-lines
 code --install-extension whtouche.vscode-js-console-utils
 code --install-extension wix.glean
+```
