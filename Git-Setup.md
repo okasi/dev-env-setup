@@ -14,3 +14,13 @@ Configure user in Git CLI:
 git config --global user.email "johndoe@example.com"
 git config --global user.name "john-d"
 ```
+
+
+Git ignore .DS_Store globally:
+```
+echo ".DS_Store" >> ~/.gitignore_global
+echo "._.DS_Store" >> ~/.gitignore_global
+echo "**/.DS_Store" >> ~/.gitignore_global
+echo "**/._.DS_Store" >> ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+```
