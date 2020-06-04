@@ -21,4 +21,3 @@ code --install-extension rbbit.typescript-hero
 code --install-extension Tyriar.sort-lines
 code --install-extension whtouche.vscode-js-console-utils
 code --install-extension wix.glean
-code --install-extension wix.vscode-import-cost
