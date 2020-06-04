@@ -1,97 +1,109 @@
 {
-    // Saving
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 750,
+  // Saving
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 750,
 
-    // Always show minimap
-    "editor.minimap.showSlider": "always",
-    // Shows line of blocks, better performance
-    "editor.minimap.renderCharacters": false,
-        
-    "workbench.startupEditor": "newUntitledFile",
+  // Always show minimap
+  "editor.minimap.showSlider": "always",
+  // Shows line of blocks, better performance
+  "editor.minimap.renderCharacters": false,
 
-    // Theme & Icons
-    "material-icon-theme.folders.theme": "specific",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Readable Code Material Darker",
+  "workbench.startupEditor": "newUntitledFile",
 
-    // Workspace tabs
-    "window.nativeTabs": true,
-    "window.title": "${rootName}",
+  // Theme & Icons
+  "material-icon-theme.folders.theme": "specific",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Readable Code Material Darker",
 
-    // Reopen workspace on start
-    "window.restoreWindows": "folders",
-    
-    // Sizing
-    "window.zoomLevel": -1,
-    "terminal.integrated.fontSize": 13,
-    "editor.fontSize": 18,
-    
-    // Font
-    "editor.fontFamily": "'FiraCode-Retina', Menlo, monospace",
-    "editor.fontLigatures": true,
-    
-    // Suggestions
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": true,
-        "strings": true
-      },
-  
-    // Gitlens
-    "gitlens.views.repositories.location": "gitlens",
-    "gitlens.views.fileHistory.location": "gitlens",
-    "gitlens.views.lineHistory.location": "gitlens",
-    "gitlens.views.compare.location": "gitlens",
-    "gitlens.views.search.location": "gitlens",
+  // Workspace tabs
+  "window.nativeTabs": true,
+  "window.title": "${rootName}",
 
-    // Confirm delete
-    "explorer.confirmDelete": true,
+  // Reopen workspace on start
+  "window.restoreWindows": "folders",
 
-    // Disable VSCode javascript validation
-    "javascript.validate.enable": false,
+  // Disable preview
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": true,
 
-    // Automaticly fetch
-    "git.autofetch": true,
-    // No need to confirm sync
-    "git.confirmSync": false,
-    // Color for git status
-    "git.decorations.enabled": true,
+  // Sizing
+  "window.zoomLevel": -1,
+  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 18,
 
-    // No need to confirm drag and drop
-    "explorer.confirmDragAndDrop": false,
+  // Font
+  "editor.fontFamily": "'FiraCode-Retina', Menlo, monospace",
+  "editor.fontLigatures": true,
 
-    // Show parent folder name in tab of file
-    "workbench.editor.labelFormat": "short",
+  // Suggestions
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
 
-   // Associate JSX & TSX with React syntax
-    "files.associations": {
-        "*.tsx": "typescriptreact",
-        "*.jsx": "javascriptreact"
-    },
+  // Gitlens
+  "gitlens.views.repositories.location": "gitlens",
+  "gitlens.views.fileHistory.location": "gitlens",
+  "gitlens.views.lineHistory.location": "gitlens",
+  "gitlens.views.compare.location": "gitlens",
+  "gitlens.views.search.location": "gitlens",
 
-    // Format
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": false,
-    "prettier.singleQuote": true,
-    "vetur.validation.template": false,
+  // Confirm delete
+  "explorer.confirmDelete": true,
 
-    // Linting
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-    ],
-    "eslint.codeActionsOnSave.mode": "problems",
-    "editor.codeActionsOnSave": {
-        // "source.organizeImports": true,
-        "source.fixAll.eslint": true,
-        "source.fixAll": true
-    },
-    "eslint.enable": true,
-    "python.pythonPath": "/usr/local/bin/python3",
+  // Disable VSCode javascript validation
+  "javascript.validate.enable": false,
 
+  // Don't automaticly fetch, for performance
+  "git.autofetch": false,
+
+  // Exlude watching some files, for performance
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.cache/**": true,
+    "**/node_modules/**": true
+  },
+
+  // No need to confirm sync
+  "git.confirmSync": false,
+
+  // Color for git status
+  "git.decorations.enabled": true,
+
+  // No need to confirm drag and drop
+  "explorer.confirmDragAndDrop": false,
+
+  // Show parent folder name in tab of file
+  "workbench.editor.labelFormat": "short",
+
+  // Associate JSX & TSX with React syntax
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    "*.jsx": "javascriptreact"
+  },
+
+  // Format
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "prettier.singleQuote": true,
+  "vetur.validation.template": false,
+
+  // Linting
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.codeActionsOnSave.mode": "problems",
+  "editor.codeActionsOnSave": {
+    // "source.organizeImports": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
+  },
+  "eslint.enable": true,
+  "python.pythonPath": "/usr/local/bin/python3"
 }
