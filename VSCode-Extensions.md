@@ -1,6 +1,9 @@
 Get list of VSCode extensions with:  
+```
 code --list-extensions | xargs -L 1 echo code --install-extension
+```
 
+List of all extensions:
 ```
 code --install-extension bbenoist.Nix
 code --install-extension bradlc.vscode-tailwindcss
