@@ -1,4 +1,4 @@
-Get list of VSCode extensions with:
+Get list of VSCode extensions with:  
 code --list-extensions | xargs -L 1 echo code --install-extension
 
 ```
