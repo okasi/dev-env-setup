@@ -61,6 +61,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 (Restart Terminal)
 
 <br/>
+<br/>
 
 No delay dock:
 ```
@@ -86,6 +87,7 @@ App to mount NTFS drives:
 ```
 brew cask install mounty
 ```
+<br/>
 <br/>
 
 NodeJS LTS:
