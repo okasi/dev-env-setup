@@ -60,6 +60,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 (Restart Terminal)
 
+<br/>
 
 No delay dock:
 ```
@@ -85,6 +86,7 @@ App to mount NTFS drives:
 ```
 brew cask install mounty
 ```
+<br/>
 
 NodeJS LTS:
 ```
@@ -118,6 +120,7 @@ brew install composer
 brew install php
 ```
 
+<br/>
 
 Apps:
 ```
