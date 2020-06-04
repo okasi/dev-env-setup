@@ -1,4 +1,4 @@
-## Stock Terminal Theming:
+## Default macOS Terminal Theming
 ```
 xcode-select —-install
 
@@ -129,7 +129,7 @@ brew install php
 <br/>
 <br/>
 
-## Apps:
+## Apps
 ```
 balenaEtcher.app
 
