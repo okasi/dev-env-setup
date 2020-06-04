@@ -126,6 +126,12 @@ brew install composer
 brew install php
 ```
 
+Java:
+```
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk11
+```
+
 <br/>
 <br/>
 
