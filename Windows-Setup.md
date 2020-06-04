@@ -11,6 +11,8 @@ https://github.com/dracula/powershell
 <br/>
 
 https://chocolatey.org/
+```
 choco install git
 choco install git-lfs
 choco install nodejs-lts
+```
