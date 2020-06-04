@@ -1,4 +1,4 @@
-### Stock Terminal Theming:
+## Stock Terminal Theming:
 ```
 xcode-select —-install
 
@@ -16,9 +16,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 
 nano ~/.zshrc
 ```
-Change theme to: "powerlevel10k/powerlevel10k"
+Change theme to: "powerlevel10k/powerlevel10k"  
 
-Save & Exit nano
+Save & Exit nano  
 ```
 brew tap homebrew/cask-fonts
 
@@ -34,15 +34,15 @@ brew cask install font-ubuntumono-nerd-font
 
 brew cask install font-meslolg-nerd-font
 ```
-Restart terminal
+Restart terminal  
 
-Preferences > Profiles > Text > Font > Meslo LG S Nerd Font Mono > 14 pt
+Preferences > Profiles > Text > Font > Meslo LG S Nerd Font Mono > 14 pt  
 
-Preferences > Profiles > Window > Columns > 100
+Preferences > Profiles > Window > Columns > 100  
 
-Preferences > Profiles > Shell > When the shell exits > Close if the shell exited cleanly
+Preferences > Profiles > Shell > When the shell exits > Close if the shell exited cleanly  
 
-Restart Terminal
+Restart Terminal  
 ```
 p10k configure
 
@@ -52,18 +52,18 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 
 nano ~/.zshrc
 ```
-Find "plugins=(git)"
+Find "plugins=(git)"  
 
-Append zsh-autosuggestions & zsh-syntax-highlighting to plugins() like this:
+Append zsh-autosuggestions & zsh-syntax-highlighting to plugins() like this:  
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
-(Restart Terminal)
+(Restart Terminal)  
 
 <br/>
 <br/>
 
-### Misc macOS fixes/optimization
+## Misc macOS fixes/optimization
 
 No delay dock:
 ```
@@ -92,7 +92,7 @@ brew cask install mounty
 <br/>
 <br/>
 
-### Tools & CLI
+## Tools & CLI
 
 NodeJS LTS:
 ```
@@ -129,7 +129,7 @@ brew install php
 <br/>
 <br/>
 
-### Apps:
+## Apps:
 ```
 balenaEtcher.app
 
