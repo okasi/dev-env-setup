@@ -7,6 +7,8 @@ pbcopy < ~/.ssh/id_rsa.pub
 Paste Here:  
 https://github.com/settings/keys
 
+<br/>
+
 Configure user in Git CLI:
 ```
 git config --global user.email "johndoe@example.com"
