@@ -1,4 +1,4 @@
-##Stock Terminal Theming:
+### Stock Terminal Theming:
 ```
 xcode-select —-install
 
@@ -63,6 +63,8 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 <br/>
 <br/>
 
+### Misc macOS fixes/optimization
+
 No delay dock:
 ```
 defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
@@ -89,6 +91,8 @@ brew cask install mounty
 ```
 <br/>
 <br/>
+
+### Tools & CLI
 
 NodeJS LTS:
 ```
@@ -125,7 +129,7 @@ brew install php
 <br/>
 <br/>
 
-Apps:
+### Apps:
 ```
 balenaEtcher.app
 
