@@ -66,7 +66,7 @@ User Settings (JSON):
   "editor.fontSize": 18,
 
   // Font
-  "editor.fontFamily": "'FiraCode-Retina', Menlo, monospace",
+  "editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode-Retina', Menlo, monospace",
   "editor.fontLigatures": true,
 
   // Suggestions
