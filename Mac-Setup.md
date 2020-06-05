@@ -142,57 +142,57 @@ brew cask install adoptopenjdk11
 
 ## Apps
 ```
-Keka
+brew cask install Keka
 
-Spectacle
+brew cask install Spectacle
 
-Brave
+brew cask install Brave-browser
 
-Waterfox
+brew cask install Waterfox-current
 
-OnyX
+brew cask install OnyX
 
-Disk Inventory X
+brew cask install Disk-inventory-x
 
-CleanMyMac X
+brew cask install Joplin
 
-Joplin
+brew cask install Kap
+
+brew cask install Visual-studio-code
+
+brew cask install Insomnia
+
+brew cask install Genymotion
+
+brew cask install qBittorrent
+
+brew cask install sdFormatter
+
+brew cask install balenaEtcher
+
+brew cask install Slack
+
+brew cask install Telegram
+
+brew cask install TeamViewer
+
+brew cask install ImageOptim
+
+brew cask install Figma
+
+brew cask install Shotcut
+
+brew cask install HandBrake
+
+brew cask install Postgres
 
 Lightshot Screenshot
 
-Kap
-
-Visual Studio Code
-
-Insomnia
-
-Genymotion
-
-Postgres
+CleanMyMac X
 
 Postico
 
 Transmit
-
-qbittorrent
-
-SD Card Formatter
-
-balenaEtcher
-
-Slack
-
-Telegram
-
-TeamViewer
-
-ImageOptim
-
-Figma
-
-Shotcut
-
-Handbrake
 ```
 
 If you need Adobe Illustrator & After Effects use the 2015.3 version, it's the most compatible and stable.
