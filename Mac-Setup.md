@@ -156,6 +156,8 @@ Disk Inventory X
 
 CleanMyMac X
 
+Joplin
+
 Lightshot Screenshot
 
 Kap
