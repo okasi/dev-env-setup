@@ -65,6 +65,11 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 ## Misc macOS fixes/optimization
 
+Allow apps from anywhere:
+```
+sudo spctl --master-disable
+```
+
 No delay dock:
 ```
 defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
