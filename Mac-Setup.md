@@ -137,49 +137,57 @@ brew cask install adoptopenjdk11
 
 ## Apps
 ```
-balenaEtcher.app
 
-CleanMyMac X.app
+Keka
 
-Disk Inventory X.app
+Spectacle
 
-CyberDuck.app
+Brave
 
-Lightshot Screenshot.app
+Waterfox
 
-OnyX.app
+OnyX
 
-Insomnia.app
+Disk Inventory X
 
-qbittorrent.app
+CleanMyMac X
 
-SD Card Formatter.app
+Lightshot Screenshot
 
-Slack.app
+Kap
 
-Spectacle.app
+Visual Studio Code
 
-TeamViewer.app
+Insomnia
 
-Telegram.app
+Genymotion
 
-Visual Studio Code.app
+Postgres
 
-ImageOptim.app
+Postico
 
-Figma.app
+Transmit
 
-Genymotion.app
+qbittorrent
 
-Handbrake.app
+SD Card Formatter
 
-Postgres.app
+balenaEtcher
 
-Postico.app
+Slack
 
-Shotcut.app
+Telegram
 
-Waterfox.app [Testing firefox]
+TeamViewer
+
+ImageOptim
+
+Figma
+
+Shotcut
+
+Handbrake
+
 ```
 
 If you need Adobe Illustrator & After Effects use the 2015.3 version, it's the most compatible and stable.
