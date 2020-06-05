@@ -137,7 +137,6 @@ brew cask install adoptopenjdk11
 
 ## Apps
 ```
-
 Keka
 
 Spectacle
@@ -187,7 +186,6 @@ Figma
 Shotcut
 
 Handbrake
-
 ```
 
 If you need Adobe Illustrator & After Effects use the 2015.3 version, it's the most compatible and stable.
