@@ -159,6 +159,8 @@ brew cask install Joplin
 
 brew cask install Kap
 
+brew cask install Docker
+
 brew cask install Visual-studio-code
 
 brew cask install Insomnia
