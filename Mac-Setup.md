@@ -24,17 +24,12 @@ brew tap homebrew/cask-fonts
 
 brew cask install font-firacode-nerd-font
 
-brew cask install font-firacode-nerd-font-mono
-
 brew cask install font-hack-nerd-font
-
-brew cask install font-sourcecodepro-nerd-font-mono
 
 brew cask install font-ubuntumono-nerd-font
 
 brew cask install font-meslolg-nerd-font
 ```
-Restart terminal  
 
 Preferences > Profiles > Text > Font > Meslo LG S Nerd Font Mono > 14 pt  
 
@@ -89,11 +84,6 @@ For normal scroll w/ mouse:
 ```
 brew cask install smoothscroll
 ```
-
-App to mount NTFS drives:
-```
-brew cask install mounty
-```
 <br/>
 <br/>
 
@@ -143,6 +133,8 @@ brew cask install adoptopenjdk11
 
 ## Apps
 ```
+brew cask install Mounty
+
 brew cask install Keka
 
 brew cask install Spectacle
