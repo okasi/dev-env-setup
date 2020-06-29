@@ -93,7 +93,8 @@ NodeJS LTS:
 ```
 brew install node@12
 brew link --overwrite node@12 --force
-brew install yarn
+ln -s /usr/local/opt/node@12 /usr/local/opt/node
+brew install yarn --ignore-dependencies
 ```
 
 NodeJS Packages:
