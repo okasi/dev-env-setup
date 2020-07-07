@@ -110,10 +110,20 @@ npm install -g expo-cli
 npm install -g gatsby-cli
 ```
 
-Expo stuff:
+Expo / React Native stuff:
+https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip
 ```
 brew install watchman
+brew install cocoapods
+brew install ios-deploy
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
+brew cask install android-sdk
+brew cask install android-studio
 brew cask install android-platform-tools
+export ANDROID_HOME=/usr/local/share/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+yes | sdkmanager --licenses && sdkmanager --update
 adb devices
 ```
 
@@ -121,21 +131,6 @@ PHP stuff:
 ```
 brew install composer
 brew install php
-```
-
-Java:
-```
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
-```
-
-Android:
-```
-brew cask install android-sdk
-
-brew cask install android-studio
-
-yes | sdkmanager --licenses && sdkmanager --update
 ```
 
 <br/>
