@@ -126,7 +126,12 @@ brew install php
 Java:
 ```
 brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk11
+brew cask install adoptopenjdk8
+```
+
+Android:
+```
+brew cask install android-sdk
 ```
 
 <br/>
