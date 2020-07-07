@@ -132,6 +132,10 @@ brew cask install adoptopenjdk8
 Android:
 ```
 brew cask install android-sdk
+
+brew cask install android-studio
+
+yes | sdkmanager --licenses && sdkmanager --update
 ```
 
 <br/>
