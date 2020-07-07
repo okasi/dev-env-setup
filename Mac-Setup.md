@@ -128,6 +128,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 brew cask install android-sdk
 brew cask install android-platform-tools
+
 export ANDROID_HOME=~/Library/Android/sdk/
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
