@@ -111,19 +111,31 @@ npm install -g gatsby-cli
 ```
 
 Expo / React Native stuff:
+
+Xcode:
 https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip
+
+Android Studio:
+https://developer.android.com/studio/index.html
+
 ```
 brew install watchman
 brew install cocoapods
 brew install ios-deploy
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
+
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) 
+
 brew cask install android-sdk
-brew cask install android-studio
 brew cask install android-platform-tools
-export ANDROID_HOME=/usr/local/share/android-sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export ANDROID_HOME=~/Library/Android/sdk/
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 yes | sdkmanager --licenses && sdkmanager --update
+
 adb devices
 ```
 
