@@ -3,7 +3,9 @@
 xcode-select —-install
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 
+```
 brew install zsh zsh-completions
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -49,9 +51,9 @@ nano ~/.zshrc
 ```
 Find "plugins=(git)"  
 
-Append zsh-autosuggestions & zsh-syntax-highlighting to plugins() like this:  
+Append safe-paste & zsh-autosuggestions & zsh-syntax-highlighting to plugins() like this:  
 ```
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git safe-paste zsh-autosuggestions zsh-syntax-highlighting)
 ```
 (Restart Terminal)  
 
