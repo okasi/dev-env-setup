@@ -28,14 +28,16 @@ brew cask install font-firacode-nerd-font
 
 brew cask install font-hack-nerd-font
 
-brew cask install font-ubuntumono-nerd-font
+brew cask install font-ubuntu-mono-nerd-font
 
-brew cask install font-meslolg-nerd-font
+brew cask install font-meslo-lg-nerd-font
 ```
 
 Preferences > Profiles > Text > Font > Meslo LG S Nerd Font Mono > 14 pt  
 
-Preferences > Profiles > Window > Columns > 100  
+Preferences > Profiles > Window > Columns > 126  
+
+Preferences > Profiles > Window > Rows > 33  
 
 Preferences > Profiles > Shell > When the shell exits > Close if the shell exited cleanly  
 
