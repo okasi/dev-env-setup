@@ -84,25 +84,6 @@ User Settings (JSON):
     "**/logs/**": true,
     "**/.fdk/**": true
   },
-  "files.exclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/.cache/**": true,
-    // "**/node_modules/**": true,
-    // "**/public/**": true,
-    "**/tmp/**": true,
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/log/**": true,
-    "**/logs/**": true,
-    "**/.fdk/**": true
-  },
   "search.exclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
