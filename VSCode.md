@@ -126,18 +126,20 @@ User Settings (JSON):
   // Sizing
   "window.zoomLevel": -1,
   "terminal.integrated.fontSize": 13,
-  "editor.fontSize": 18,
 
   // Font
   "editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode-Retina', Menlo, monospace",
   "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.cursorBlinking": "phase",
 
   // Suggestions
   "editor.quickSuggestions": {
     "other": true,
-    "comments": true,
-    "strings": true
+    "comments": false,
+    "strings": false
   },
+  "editor.quickSuggestionsDelay": 90,
 
   // Gitlens
   "gitlens.views.repositories.location": "gitlens",
@@ -208,5 +210,4 @@ User Settings (JSON):
     "LC_ALL": "C.UTF-8"
   }
 }
-
 ```
