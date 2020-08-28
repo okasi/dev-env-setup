@@ -62,7 +62,6 @@ User Settings (JSON):
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": true,
-  "editor.codeLens": false,
 
   // Exlude watching some files, for performance
   "files.watcherExclude": {
@@ -89,6 +88,8 @@ User Settings (JSON):
     "**/.git/subtree-cache/**": true,
     "**/.cache/**": true,
     "**/node_modules/**": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
     "**/public/**": true,
     "**/tmp/**": true,
     "**/.git": true,
