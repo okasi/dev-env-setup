@@ -69,6 +69,8 @@ User Settings (JSON):
     "**/.git/subtree-cache/**": true,
     "**/.cache/**": true,
     "**/node_modules/**": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
     "**/public/**": true,
     "**/tmp/**": true,
     "**/.git": true,
