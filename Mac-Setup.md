@@ -155,55 +155,57 @@ brew install php
 
 ## Apps
 ```
-brew cask install Mounty
+brew install --cask Mounty
 
-brew cask install Keka
+brew install --cask Keka
 
-brew cask install Spectacle
+brew install --cask Spectacle
 
-brew cask install Brave-browser
+brew install --cask Brave-browser
 
-brew cask install Waterfox-current
+brew install --cask Waterfox-current
 
-brew cask install OnyX
+brew install --cask OnyX
 
-brew cask install Disk-inventory-x
+brew install --cask Disk-inventory-x
 
-brew cask install Joplin
+brew install --cask Joplin
 
-brew cask install Kap
+brew install --cask Kap
 
-brew cask install Docker
+brew install --cask Docker
 
-brew cask install Visual-studio-code
+brew install --cask VSCodium
 
-brew cask install Insomnia
+brew install --cask Insomnia
 
-brew cask install Genymotion
+brew install --cask Genymotion
 
-brew cask install qBittorrent
+brew install --cask qBittorrent
 
-brew cask install sdFormatter
+brew install --cask sdFormatter
 
-brew cask install balenaEtcher
+brew install --cask balenaEtcher
 
-brew cask install Slack
+brew install --cask Slack
 
-brew cask install Telegram
+brew install --cask Telegram
 
-brew cask install TeamViewer
+brew install --cask TeamViewer
 
-brew cask install ImageOptim
+brew install --cask ImageOptim
 
-brew cask install Figma
+brew install --cask Figma
 
-brew cask install Shotcut
+brew install --cask Shotcut
 
-brew cask install HandBrake
+brew install --cask HandBrake
 
-brew cask install Postgres
+brew install --cask Postgres
 
-Lightshot Screenshot
+brew install --cask The-Unarchiver
+
+brew install --cask Skitch
 
 CleanMyMac X
 
