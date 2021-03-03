@@ -12,6 +12,7 @@ choco install git
 choco install git-lfs
 choco install nodejs-lts
 choco install firacodenf
+choco install python
 ```
 
 
