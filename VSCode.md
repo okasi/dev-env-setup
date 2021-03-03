@@ -112,7 +112,7 @@ User Settings (JSON):
     "terminal.integrated.fontSize": 13,
   
     // Font
-    "editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode-Retina', Menlo, monospace",
+    "editor.fontFamily": "'FiraCode Nerd Font', ''FireCode NF, 'FiraCode-Retina', Menlo, monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 18,
     "editor.cursorBlinking": "phase",
