@@ -15,9 +15,13 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+Install:
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
+Restart
+```
 wsl --set-default-version 2
-
 ```
 
 Package manager & essentials
@@ -39,6 +43,20 @@ choco install firacodenf
 
 choco install vscodium
 ```
+
+ZSH
+```
+sudo apt-get install zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+nano ~/.zshrc
+```
+
+Paste the next line ZSH_THEME="powerlevel9k/powerlevel9k" instead of ZSH_THEME="robbyrussell"
+
 
 
 
