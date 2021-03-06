@@ -57,6 +57,11 @@ nano ~/.zshrc
 
 Paste the next line ZSH_THEME="powerlevel9k/powerlevel9k" instead of ZSH_THEME="robbyrussell"
 
+```
+nano ~/.bashrc
+```
+Add `bash -c zsh` to top of file
+
 
 
 
