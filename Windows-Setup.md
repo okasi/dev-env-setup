@@ -22,9 +22,13 @@ https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 Restart
 ```
 wsl --set-default-version 2
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install curl wget git build-essential libssl-dev
 ```
 
-Package manager & essentials
+# Package manager & essentials
 https://chocolatey.org/
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -44,8 +48,11 @@ choco install firacodenf
 choco install vscodium
 ```
 
-ZSH
+# ZSH
 ```
+sudo apt-get update
+sudo apt-get upgrade
+
 sudo apt-get install zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -62,6 +69,25 @@ nano ~/.bashrc
 ```
 Add `bash -c zsh` to top of file
 
+
+# NodeJS
+https://github.com/creationix/nvm#install-script
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+nano ~/.zshrc
+```
+Paste
+```
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+```
+Save
+```
+source ~/.zshrc
+nvm install --lts
+nvm use --lts
+```
 
 
 
