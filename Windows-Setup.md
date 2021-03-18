@@ -46,12 +46,16 @@ choco install python
 choco install firacodenf
 
 choco install vscodium
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install xclip xsel
+sudo apt-get install wget ca-certificates
 ```
 
 # ZSH
 ```
-sudo apt-get update
-sudo apt-get upgrade
 
 sudo apt-get install zsh
 
@@ -89,7 +93,19 @@ nvm install --lts
 nvm use --lts
 ```
 
-
+# pbcopy alias
+```
+nano ~/.zshrc
+```
+Paste
+```
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+```
+Save
+```
+source ~/.zshrc
+```
 
 https://github.com/dracula/powershell
 
