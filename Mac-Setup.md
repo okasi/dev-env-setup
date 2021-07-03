@@ -24,16 +24,12 @@ Save & Exit nano
 ```
 brew tap homebrew/cask-fonts
 
-brew cask install font-firacode-nerd-font
+brew install --cask font-firacode-nerd-font
 
-brew cask install font-hack-nerd-font
-
-brew cask install font-ubuntu-mono-nerd-font
-
-brew cask install font-meslo-lg-nerd-font
+brew install --cask font-ubuntu-mono-nerd-font
 ```
 
-Preferences > Profiles > Text > Font > Meslo LG S Nerd Font Mono > 14 pt  
+Preferences > Profiles > Text > Font > UbuntuMono Nerd Font Mono > 16 pt  
 
 Preferences > Profiles > Window > Columns > 126  
 
