@@ -114,13 +114,10 @@ User Settings (JSON):
     "**/logs/**": true,
     "**/.fdk/**": true
   },
-
-  // Sizing
-  "window.zoomLevel": -1,
   "terminal.integrated.fontSize": 13,
 
   // Font
-  "editor.fontFamily": "'FiraCode Nerd Font', 'FireCode NF', 'FiraCode-Retina', Menlo, monospace",
+  "editor.fontFamily": "FiraCode Nerd Font Mono, Menlo, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 18,
   "editor.cursorBlinking": "phase",
@@ -143,7 +140,7 @@ User Settings (JSON):
   // Confirm delete
   "explorer.confirmDelete": true,
 
-  // Disable VSCode javascript validation
+  // Prevents VS Code linting JavaScript with the default linter
   "javascript.validate.enable": false,
 
   // Automaticly fetch
@@ -169,14 +166,13 @@ User Settings (JSON):
 
   // Format
   "editor.tabSize": 2,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.defaultFormatter": "standard.vscode-standard",
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications",
+  // "editor.formatOnSaveMode": "modifications",
   "editor.formatOnPaste": false,
   "prettier.singleQuote": true,
   "prettier.semi": false,
-  "vetur.validation.template": false,
+  "emmet.preferences": { "output.inlineBreak": 1 },
 
   // Linting
   "eslint.validate": [
@@ -189,9 +185,9 @@ User Settings (JSON):
   "eslint.codeActionsOnSave.mode": "problems",
   "editor.codeActionsOnSave": {
     // "source.organizeImports": true,
-    "eslint.format.enable": true,
-    "source.fixAll.eslint": true,
-    "source.fixAll": true
+    "eslint.format.enable": true
+    // "source.fixAll.eslint": true,
+    // "source.fixAll": true
   },
 
   "python.pythonPath": "/usr/local/bin/python3",
@@ -200,8 +196,11 @@ User Settings (JSON):
   "typescript.disableAutomaticTypeAcquisition": true,
 
   // Terminal settings
-  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.env.windows": {
+    "LC_ALL": "C.UTF-8"
+  },
+  "terminal.integrated.env.osx": {
     "LC_ALL": "C.UTF-8"
   },
 
@@ -218,11 +217,40 @@ User Settings (JSON):
 
   // phpcs settings
   "phpcs.standard": "WordPress",
+  "phpSniffer.autoDetect": true,
+  "[php]": {
+    "editor.defaultFormatter": "wongjn.php-sniffer"
+  },
 
-  "terminal.integrated.rendererType": "dom",
+  // Theme
+  "workbench.colorTheme": "Readable Code Material Darker",
 
-  "workbench.colorTheme": "Readable Code Material Darker"
+  // Typescript & Experimental JavaScript options
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
 
-  // "editor.renderWhitespace": "boundary",
+  // Prevents VS Code from formatting JavaScript with the default linter
+  "javascript.format.enable": false,
+
+  // Lints with Standard JS
+  "standard.enable": false,
+
+  // Format files with Standard whenever you save the file
+  "standard.autoFixOnSave": false,
+
+  // Files to validate with Standard JS
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    // "typescript",
+    // "typescriptreact",
+    "html"
+  ],
+  "standard.options": {
+    "plugins": ["html"]
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": false,
+  "window.zoomLevel": -1
 }
 ```
