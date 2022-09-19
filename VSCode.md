@@ -166,7 +166,7 @@ User Settings (JSON):
 
   // Format
   "editor.tabSize": 2,
-  "editor.defaultFormatter": "standard.vscode-standard",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   // "editor.formatOnSaveMode": "modifications",
   "editor.formatOnPaste": false,
@@ -224,6 +224,10 @@ User Settings (JSON):
 
   // Theme
   "workbench.colorTheme": "Readable Code Material Darker",
+
+  // Bracket pair color
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
 
   // Typescript & Experimental JavaScript options
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
