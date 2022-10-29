@@ -1,3 +1,6 @@
+### If you need to rent a good cheap VPS
+https://cloud.hosthatch.com/a/2831
+
 ### Stand in root
 ```
 cd ~
