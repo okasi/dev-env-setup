@@ -173,8 +173,6 @@ brew install --cask Docker
 
 brew install --cask VSCodium
 
-brew install --cask Insomnia
-
 brew install --cask Genymotion
 
 brew install --cask qBittorrent
@@ -187,7 +185,7 @@ brew install --cask Slack
 
 brew install --cask Telegram
 
-brew install --cask TeamViewer
+brew install --cask RustDesk
 
 brew install --cask ImageOptim
 
@@ -201,9 +199,7 @@ brew install --cask Postgres
 
 brew install --cask The-Unarchiver
 
-brew install --cask Skitch
-
-CleanMyMac X
+brew install --cask Shottr
 
 Postico
 
