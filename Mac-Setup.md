@@ -14,10 +14,10 @@ brew install --cask font-firacode-nerd-font font-ubuntu-mono-nerd-font
 
 brew install fish starship
 
+fish
+
 sudo sh -c 'echo /usr/local/bin/fish >> /etc/shells'
 chsh -s /usr/local/bin/fish
-
-eval "$(starship init fish)"
 
 echo "starship init fish | source" >> ~/.config/fish/config.fish
 
