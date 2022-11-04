@@ -53,7 +53,7 @@ User Settings (JSON):
   "editor.cursorBlinking": "phase",
   // Terminal
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.env.windows": {
     "LC_ALL": "C.UTF-8"
   },
