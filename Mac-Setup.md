@@ -2,31 +2,28 @@
 ```
 xcode-select —-install
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-```
-brew install zsh zsh-completions
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-chsh -s zsh
-
-upgrade_oh_my_zsh
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-
-nano ~/.zshrc
-```
-Change theme to: "powerlevel10k/powerlevel10k"  
-
-Save & Exit nano  
-```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-drivers
 brew tap homebrew/cask-fonts
+```
 
-brew install --cask font-firacode-nerd-font
+```
+brew install --cask font-firacode-nerd-font font-ubuntu-mono-nerd-font
 
-brew install --cask font-ubuntu-mono-nerd-font
+brew install fish starship
+
+sudo sh -c 'echo /usr/local/bin/fish >> /etc/shells'
+chsh -s /usr/local/bin/fish
+
+eval "$(starship init fish)"
+
+echo "starship init fish | source" >> ~/.config/fish/config.fish
+
+mkdir -p ~/.config && touch ~/.config/starship.toml
+
+starship preset bracketed-segments > ~/.config/starship.toml
 ```
 
 Preferences > Profiles > Text > Font > UbuntuMono Nerd Font Mono > 16 pt  
