@@ -94,7 +94,6 @@ NodeJS LTS & pnpm & Yarn:
 brew install pnpm
 pnpm env use --global lts
 brew install yarn
-
 ```
 
 NodeJS Packages:
