@@ -42,10 +42,11 @@ choco install git-lfs
 
 choco install nodejs-lts
 choco install python
+choco install temurin17
 
 choco install firacodenf
 
-choco install vscodium
+choco install vscode
 
 sudo apt-get update
 sudo apt-get upgrade
