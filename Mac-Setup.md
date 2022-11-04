@@ -15,9 +15,9 @@ brew install --cask font-firacode-nerd-font font-ubuntu-mono-nerd-font
 brew install fish starship
 
 fish
-
-sudo sh -c 'echo /usr/local/bin/fish >> /etc/shells'
-chsh -s /usr/local/bin/fish
+fish_add_path /opt/homebrew/bin
+echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/bin/fish
 
 echo "starship init fish | source" >> ~/.config/fish/config.fish
 
@@ -35,22 +35,6 @@ Preferences > Profiles > Window > Rows > 33
 Preferences > Profiles > Shell > When the shell exits > Close if the shell exited cleanly  
 
 Restart Terminal  
-```
-p10k configure
-
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
-nano ~/.zshrc
-```
-Find "plugins=(git)"  
-
-Append safe-paste & zsh-autosuggestions & zsh-syntax-highlighting to plugins() like this:  
-```
-plugins=(git safe-paste zsh-autosuggestions zsh-syntax-highlighting)
-```
-(Restart Terminal)  
 
 <br/>
 <br/>
