@@ -91,10 +91,11 @@ brew cask install smoothscroll
 
 NodeJS LTS:
 ```
-brew install node@14
-brew link --overwrite node@14 --force
-ln -s /usr/local/opt/node@14 /usr/local/opt/node
+brew install node@18
+brew link --overwrite node@18 --force
+ln -s /usr/local/opt/node@18 /usr/local/opt/node
 brew install yarn
+brew install pnpm
 ```
 
 NodeJS Packages:
