@@ -89,26 +89,23 @@ brew cask install smoothscroll
 
 ## Tools & CLI
 
-NodeJS LTS:
+NodeJS LTS & pnpm & Yarn:
 ```
-brew install node@18
-brew link --overwrite node@18 --force
-ln -s /usr/local/opt/node@18 /usr/local/opt/node
-brew install yarn
 brew install pnpm
+pnpm env use --global lts
+brew install yarn
+
 ```
 
 NodeJS Packages:
 ```
-npm install -g nodemon
-npm install -g serve
-npm install -g prettier
-npm install -g eslint
-npm install -g now
-npm install -g typescript
-npm install -g apollo
-npm install -g expo-cli
-npm install -g gatsby-cli
+pnpm install -g prettier eslint rome@next
+
+pnpm install -g typescript
+
+pnpm install -g nodemon @vercel/ncc
+
+pnpm install -g serve localtunnel now
 ```
 
 Expo / React Native stuff:
@@ -124,8 +121,9 @@ brew install watchman
 brew install cocoapods
 brew install ios-deploy
 
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) 
+brew tap homebrew/cask-versions
+brew install --cask temurin17
+export JAVA_HOME=$(/usr/libexec/java_home -v '17*')
 
 brew cask install android-sdk
 brew cask install android-platform-tools
@@ -152,59 +150,84 @@ brew install php
 
 ## Apps
 ```
+# To mount NTFS drives
 brew install --cask Mounty
 
-brew install --cask Keka
+# Move and resize windows with keyboard shortcuts
+brew install --cask Rectangle
 
-brew install --cask Spectacle
-
+# Privacy friendly web browser based on Chrome
 brew install --cask Brave-browser
 
+# Open source Firefox (web browser) fork
 brew install --cask Waterfox-current
 
+# Operating System Utilities
 brew install --cask OnyX
 
-brew install --cask Disk-inventory-x
+# Disk usage utility (visualizer
+brew install --cask Disk-Inventory-X
 
-brew install --cask Joplin
-
-brew install --cask Kap
-
-brew install --cask Docker
-
-brew install --cask VSCodium
-
-brew install --cask Genymotion
-
-brew install --cask qBittorrent
-
-brew install --cask sdFormatter
-
-brew install --cask balenaEtcher
-
-brew install --cask Slack
-
-brew install --cask Telegram
-
-brew install --cask RustDesk
-
-brew install --cask ImageOptim
-
-brew install --cask Figma
-
-brew install --cask Shotcut
-
-brew install --cask HandBrake
-
-brew install --cask Postgres
-
-brew install --cask The-Unarchiver
-
+# Screenshot
 brew install --cask Shottr
 
-Postico
+# Screen recorder
+brew install --cask Kap
 
-Transmit
+# Containerized application development
+brew install --cask Docker
+
+# IDE
+brew install --cask visual-studio-code
+
+# Android simulator
+brew install --cask Genymotion
+
+# Torrent downloader
+brew install --cask qBittorrent
+
+# Format SD cards & USB drives
+brew install --cask sdFormatter
+
+# Flash OS images to SD cards & USB drives
+brew install --cask balenaEtcher
+
+# Workspace text chat
+brew install --cask Slack
+
+# Workspace video chat
+brew install --cask ZoomUs
+
+# Community chat
+brew install --cask Discord
+
+# Private chat
+brew install --cask Telegram
+
+# Note taking
+brew install --cask Notion
+
+# Remote desktop
+brew install --cask AnyDesk
+
+# Optimize images
+brew install --cask ImageOptim
+
+# Design app
+brew install --cask Figma
+
+# Simple video editing app
+brew install --cask Shotcut
+
+# Video compression
+brew install --cask HandBrake
+
+# Handle .RAR archive files
+brew install --cask The-Unarchiver
+
+# FTP / SFTP client
+brew install --cask Cyberduck
+
+# Web Debugging Proxy
+brew install --cask Charles
 ```
-
-If you need Adobe Illustrator & After Effects use the 2015.3 version, it's the most compatible and stable.
