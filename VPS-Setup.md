@@ -1,6 +1,14 @@
 ### If you need to rent a good cheap VPS
 https://cloud.hosthatch.com/a/2831
 
+### To connect w/ password in one line from local machine (Mac)
+```
+brew tap esolitos/ipa
+brew install sshpass
+
+sshpass -p <PASS> ssh <USER>@<IP/DOMAIN> -X
+```
+
 ### Stand in root
 ```
 cd ~
