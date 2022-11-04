@@ -24,11 +24,32 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl wget xclip && sudo apt-get install gcc g++ make
 ```
 
-### Install Node LTS (v16)
+## Install fish shell & starship
 ```
-curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt-get install fish
+fish
+chsh -s /usr/bin/fish
+mkdir -p ~/.config/fish
+echo "set -g -x fish_greeting ''" >> ~/.config/fish/config.fish
+
+curl -sS https://starship.rs/install.sh | sh
+echo "starship init fish | source" >> ~/.config/fish/config.fish
+mkdir -p ~/.config && touch ~/.config/starship.toml
+starship preset bracketed-segments > ~/.config/starship.toml
+```
+
+### Install Node LTS (v18)
+```
+curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
 
 sudo apt-get install -y nodejs && sudo apt-get update
+```
+
+### Install yarn
+```
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
 ```
 
 ### Install PNPM
