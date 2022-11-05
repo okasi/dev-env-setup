@@ -12,18 +12,28 @@ brew tap homebrew/cask-fonts
 ```
 brew install --cask font-firacode-nerd-font font-ubuntu-mono-nerd-font
 
-brew install fish starship
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
-fish
-fish_add_path /opt/homebrew/bin
-echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
-chsh -s /opt/homebrew/bin/fish
+zimfw install
 
-echo "starship init fish | source" >> ~/.config/fish/config.fish
+brew install starship
+
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 
 mkdir -p ~/.config && touch ~/.config/starship.toml
 
-starship preset bracketed-segments > ~/.config/starship.toml
+starship preset no-runtime-versions > ~/.config/starship.toml
+
+# Modern replacement for 'cat'
+brew install bat
+echo 'alias cat="bat"' >> ~/.zshrc
+
+# Modern replacement for 'ls'
+brew install exa
+echo 'alias l="exa"' >> ~/.zshrc
+echo 'alias la="exa -a"' >> ~/.zshrc
+echo 'alias ll="exa -lah"' >> ~/.zshrc
+echo 'alias ls="exa --color=auto"' >> ~/.zshrc
 ```
 
 Preferences > Profiles > Text > Font > UbuntuMono Nerd Font Mono > 16 pt  
