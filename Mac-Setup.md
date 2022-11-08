@@ -1,8 +1,7 @@
 ## Homebrew setup
 ```
-xcode-select —-install
-
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew tap homebrew/cask
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-drivers
@@ -64,7 +63,6 @@ window:
 
 Start new terminal (Alacritty)
 
-<br/>
 <br/>
 
 ## Misc macOS fixes/optimization
