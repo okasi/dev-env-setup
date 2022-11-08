@@ -105,7 +105,7 @@ sudo spctl --master-disable
 
 No delay dock:
 ```
-defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+defaults write com.apple.dock autohide-time-modifier -int 0
 ```
 
 Disable mouse acceleration:
