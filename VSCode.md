@@ -200,6 +200,8 @@ User Settings (JSON):
     "source.fixAll": true
   },
   // Disable telemetry
+  "telemetry.telemetryLevel": "off",
+  "enable-crash-reporter": false,
   "workbench.enableExperiments": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "extensions.autoCheckUpdates": false,
