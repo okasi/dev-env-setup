@@ -1,4 +1,4 @@
-## Default macOS Terminal Theming
+## Homebrew setup
 ```
 xcode-select —-install
 
@@ -9,31 +9,36 @@ brew tap homebrew/cask-drivers
 brew tap homebrew/cask-fonts
 ```
 
+## Terminal / shell setup
 ```
+# Nerd fonts
 brew install --cask font-firacode-nerd-font font-ubuntu-mono-nerd-font
 
+# ZSH shell & zim framework setup
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
-
 zimfw install
 
+# Shell prompt & theme customization
 brew install starship
-
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-
 mkdir -p ~/.config && touch ~/.config/starship.toml
-
 starship preset no-runtime-versions > ~/.config/starship.toml
 
-# Modern replacement for 'cat'
+# Modern replacement for "cat" (display contents of file)
 brew install bat
 echo 'alias cat="bat"' >> ~/.zshrc
 
-# Modern replacement for 'ls'
+# Modern replacement for "ls" (list directories)
 brew install exa
 echo 'alias l="exa"' >> ~/.zshrc
 echo 'alias la="exa -a"' >> ~/.zshrc
 echo 'alias ll="exa -lah"' >> ~/.zshrc
 echo 'alias ls="exa --color=auto"' >> ~/.zshrc
+
+# Modern replacement for "nano" (editor)
+brew install micro
+echo 'alias nano="micro"' >> ~/.zshrc
+git config --global core.editor "micro"
 ```
 
 Preferences > Profiles > Text > Font > UbuntuMono Nerd Font Mono > 16 pt  
