@@ -94,7 +94,7 @@ brew install yarn
 
 NodeJS Packages:
 ```
-pnpm install -g prettier eslint rome@next
+pnpm install -g prettier eslint eslint-plugin-prettier rome@next
 
 pnpm install -g typescript
 
