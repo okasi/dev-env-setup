@@ -187,6 +187,9 @@ brew install --cask Rectangle
 # Privacy friendly web browser based on Chrome
 brew install --cask Brave-browser
 
+# File archiver
+brew install --cask Keka
+
 # Open source Firefox (web browser) fork
 brew install --cask Waterfox-current
 
