@@ -89,6 +89,7 @@ NodeJS LTS & pnpm & Yarn:
 ```
 brew install pnpm
 pnpm env use --global lts
+echo 'alias pn="pnpm"' >> ~/.zshrc
 brew install yarn
 ```
 
