@@ -120,6 +120,7 @@ brew install mos
 
 ## NodeJS LTS & pnpm & Yarn
 ```
+brew install node@18
 brew install pnpm
 pnpm env use --global lts
 echo 'alias pn="pnpm"' >> ~/.zshrc
