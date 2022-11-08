@@ -7,23 +7,30 @@ List of all extensions:
 ```
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension christian-kohler.path-intellisense
-code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
-code --install-extension GraphQL.vscode-graphql
 code --install-extension GraphQL.vscode-graphql-syntax
 code --install-extension mikestead.dotenv
 code --install-extension mrorz.language-gettext
-code --install-extension oderwat.indent-rainbow
-code --install-extension petemill.theme-readable-material-darker
 code --install-extension pflannery.vscode-versionlens
-code --install-extension PKief.material-icon-theme
 code --install-extension quicktype.quicktype
-code --install-extension redhat.vscode-yaml
-code --install-extension rome.rome
 code --install-extension svelte.svelte-vscode
-code --install-extension thomas-baumgaertner.vcl
 code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.errorlens
+
+# Theming
+code --install-extension petemill.theme-readable-material-darker
+code --install-extension PKief.material-icon-theme
+code --install-extension oderwat.indent-rainbow
+
+# Linters
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension rome.rome
+
+# YAML
+code --install-extension redhat.vscode-yaml
+
+# VCL
+code --install-extension thomas-baumgaertner.vcl
 ```
 
 User Settings (JSON):
