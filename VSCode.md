@@ -52,14 +52,24 @@ User Settings (JSON):
   "editor.fontSize": 18,
   "editor.cursorBlinking": "phase",
   // Terminal
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.defaultProfile.osx": "preinstalled-zsh",
+  "terminal.integrated.profiles.osx": {
+    "preinstalled-zsh": {
+      "path": "/bin/zsh", // Explicitly specify preinstalled zsh
+    },
+  },
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "UbuntuMono Nerd Font Mono, Menlo, monospace",
   "terminal.integrated.env.windows": {
     "LC_ALL": "C.UTF-8"
   },
   "terminal.integrated.env.osx": {
     "LC_ALL": "C.UTF-8"
   },
+  "terminal.integrated.ignoreProcessNames": [
+    "starship",
+    "zsh"
+  ],
   // Reopen workspace on start
   "window.restoreWindows": "folders",
   // Disable preview
@@ -72,18 +82,23 @@ User Settings (JSON):
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
+    "**/.git": true,
     "**/.cache/**": true,
     "**/node_modules/**": true,
+    "**/node_modules/": true,
+    "**/.yarn/**": true,
+    "**/.yarn/": true,
     "**/package-lock.json": true,
     "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
     "**/public/**": true,
     "**/tmp/**": true,
-    "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
+    "**/tsconfig.tsbuildinfo": true,
+    "**/.eslintcache": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
     "**/bower_components": true,
     "**/dist/**": true,
     "**/log/**": true,
@@ -93,18 +108,23 @@ User Settings (JSON):
   "search.exclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
+    "**/.git": true,
     "**/.cache/**": true,
     "**/node_modules/**": true,
+    "**/node_modules/": true,
+    "**/.yarn/**": true,
+    "**/.yarn/": true,
     "**/package-lock.json": true,
     "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true,
     "**/public/**": true,
     "**/tmp/**": true,
-    "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
+    "**/tsconfig.tsbuildinfo": true,
+    "**/.eslintcache": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
     "**/bower_components": true,
     "**/dist/**": true,
     "**/log/**": true,
@@ -144,11 +164,12 @@ User Settings (JSON):
     "output.inlineBreak": 1
   },
   // Linting
+  "eslint.runtime": "node",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
   ],
   "eslint.enable": true,
   "eslint.options": {
@@ -160,14 +181,11 @@ User Settings (JSON):
       "parserOptions": {
         "ecmaVersion": 2017
       },
-      "plugins": [
-        "prettier"
-      ],
       "rules": {
         "prettier/prettier": "error",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "off"
-      },
+      }
     }
   },
   "eslint.codeActionsOnSave.mode": "problems",
@@ -194,7 +212,8 @@ User Settings (JSON):
   // Associate JSX & TSX with React syntax
   "files.associations": {
     "*.tsx": "typescriptreact",
-    "*.jsx": "javascriptreact"
+    "*.jsx": "javascriptreact",
+    "*.graphql": "graphql"
   },
   // Formatters
   "[javascript][typescript]": {
