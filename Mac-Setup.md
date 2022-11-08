@@ -224,7 +224,7 @@ brew install --cask balenaEtcher
 brew install --cask Slack
 
 # Workspace video chat
-brew install --cask ZoomUs
+brew install --cask Zoom
 
 # Community chat
 brew install --cask Discord
