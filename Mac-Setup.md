@@ -22,7 +22,11 @@ zimfw install
 brew install starship
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 mkdir -p ~/.config && touch ~/.config/starship.toml
-starship preset no-runtime-versions > ~/.config/starship.toml
+starship preset no-runtime-versions >> ~/.config/starship.toml
+echo 'command_timeout = 1200\n' | cat - ~/.config/starship.toml > temp && mv temp ~/.config/starship.toml
+echo '\n[aws]\ndisabled=true\n\n[gcloud]\ndisabled=true\n[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "[$user]($style)"\ndisabled = false\nshow_always = true\n\n[hostname]\nssh_only = false\nformat =  "[@$hostname](green bold) "\ndisabled = false' >> ~/.config/starship.toml
+
+
 
 # Modern replacement for "cat" (display contents of file)
 brew install bat
@@ -90,7 +94,7 @@ NodeJS LTS & pnpm & Yarn:
 brew install pnpm
 pnpm env use --global lts
 echo 'alias pn="pnpm"' >> ~/.zshrc
-brew install yarn
+pnpm install -g yarn
 ```
 
 NodeJS Packages:
