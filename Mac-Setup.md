@@ -61,8 +61,6 @@ window:
         lines: 36
 selection:
     save_to_clipboard: true
-shell:
-    program: /bin/zsh
 mouse:
     hints:
         launcher:
