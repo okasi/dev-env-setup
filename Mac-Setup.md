@@ -97,7 +97,6 @@ colors:
 
 Start new terminal (Alacritty)
 
-<br/>
 
 ## Misc macOS fixes/optimization
 
@@ -116,21 +115,12 @@ Disable mouse acceleration:
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 ```
 
-More mouse options:
+Mouse options e.g. normal scroll direction:
 ```
-brew cask install steermouse
+brew install mos
 ```
 
-For normal scroll w/ mouse:
-```
-brew cask install smoothscroll
-```
-<br/>
-<br/>
-
-## Tools & CLI
-
-NodeJS LTS & pnpm & Yarn:
+## NodeJS LTS & pnpm & Yarn
 ```
 brew install pnpm
 pnpm env use --global lts
@@ -138,7 +128,7 @@ echo 'alias pn="pnpm"' >> ~/.zshrc
 pnpm install -g yarn
 ```
 
-NodeJS Packages:
+## Global NodeJS packages
 ```
 pnpm install -g prettier eslint eslint-plugin-prettier rome@next
 
@@ -149,7 +139,7 @@ pnpm install -g nodemon @vercel/ncc
 pnpm install -g serve localtunnel vercel
 ```
 
-Expo / React Native stuff:
+## Expo / React Native stuff
 
 Xcode:
 https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip
@@ -180,14 +170,11 @@ yes | sdkmanager --licenses && sdkmanager --update
 adb devices
 ```
 
-PHP stuff:
+## PHP stuff
 ```
 brew install composer
 brew install php
 ```
-
-<br/>
-<br/>
 
 ## Apps
 ```
