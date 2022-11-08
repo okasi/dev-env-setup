@@ -11,7 +11,7 @@ brew tap homebrew/cask-fonts
 ## Terminal / shell setup
 ```
 # Nerd fonts
-brew install --cask font-firacode-nerd-font font-ubuntu-mono-nerd-font
+brew install --cask font-fira-code-nerd-font font-ubuntu-mono-nerd-font
 
 # ZSH shell & zim framework setup
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
