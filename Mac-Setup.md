@@ -206,7 +206,7 @@ brew install --cask Kap
 brew install --cask Docker
 
 # IDE
-brew install --cask visual-studio-code
+brew install --cask Visual-Studio-Code
 
 # Android simulator
 brew install --cask Genymotion
