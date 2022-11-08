@@ -100,7 +100,7 @@ pnpm install -g typescript
 
 pnpm install -g nodemon @vercel/ncc
 
-pnpm install -g serve localtunnel now
+pnpm install -g serve localtunnel vercel
 ```
 
 Expo / React Native stuff:
