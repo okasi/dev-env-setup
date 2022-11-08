@@ -47,9 +47,9 @@ git config --global core.editor "micro"
 
 Preferences > Profiles > Text > Font > UbuntuMono Nerd Font Mono > 16 pt  
 
-Preferences > Profiles > Window > Columns > 126  
+Preferences > Profiles > Window > Columns > 128
 
-Preferences > Profiles > Window > Rows > 33  
+Preferences > Profiles > Window > Rows > 38
 
 Preferences > Profiles > Shell > When the shell exits > Close if the shell exited cleanly  
 
