@@ -18,7 +18,7 @@ code --install-extension Tyriar.sort-lines
 code --install-extension usernamehw.errorlens
 
 # Theming
-code --install-extension petemill.theme-readable-material-darker
+code --install-extension github.github-vscode-theme
 code --install-extension PKief.material-icon-theme
 code --install-extension oderwat.indent-rainbow
 
@@ -47,7 +47,7 @@ User Settings (JSON):
   // Theme & Icons
   "material-icon-theme.folders.theme": "specific",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Readable Code Material Darker",
+  "workbench.colorTheme": "GitHub Dark Default",
   // Workspace tabs
   "window.nativeTabs": true,
   "window.title": "${rootName}",
