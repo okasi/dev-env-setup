@@ -26,8 +26,6 @@ starship preset no-runtime-versions >> ~/.config/starship.toml
 echo 'command_timeout = 1200\n' | cat - ~/.config/starship.toml > temp && mv temp ~/.config/starship.toml
 echo '\n[aws]\ndisabled=true\n\n[gcloud]\ndisabled=true\n[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "[$user]($style)"\ndisabled = false\nshow_always = true\n\n[hostname]\nssh_only = false\nformat =  "[@$hostname](green bold) "\ndisabled = false' >> ~/.config/starship.toml
 
-
-
 # Modern replacement for "cat" (display contents of file)
 brew install bat
 echo 'alias cat="bat"' >> ~/.zshrc
@@ -45,15 +43,26 @@ echo 'alias nano="micro"' >> ~/.zshrc
 git config --global core.editor "micro"
 ```
 
-Preferences > Profiles > Text > Font > UbuntuMono Nerd Font Mono > 16 pt  
+## Install Alacritty
+```
+brew install --cask --no-quarantine alacritty
 
-Preferences > Profiles > Window > Columns > 128
+touch ~/.alacritty.yml
 
-Preferences > Profiles > Window > Rows > 38
+micro ~/.alacritty.yml
 
-Preferences > Profiles > Shell > When the shell exits > Close if the shell exited cleanly  
+# Paste & save this:
+font:
+    size: 16
+    normal:
+        family: UbuntuMono Nerd Font Mono
+window:
+    dimensions:
+        columns: 128
+        lines: 36
+```
 
-Restart Terminal  
+Start new terminal (Alacritty)
 
 <br/>
 <br/>
