@@ -18,6 +18,7 @@ git config --global user.name "john-d"
 
 Git ignore .DS_Store globally:
 ```
+touch ~/.gitignore_global
 echo ".DS_Store" >> ~/.gitignore_global
 echo "._.DS_Store" >> ~/.gitignore_global
 echo "**/.DS_Store" >> ~/.gitignore_global
