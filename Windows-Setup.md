@@ -1,115 +1,148 @@
-# Use PowerShell only
+Start PowerShell as Admin
 
-
-# Powershell stuff
-```
-Install-Module -Name PowerShellGet -Force
-Install-Module -Name posh-git -AllowPrerelease -Force
-powershell -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherCheck"
-```
-
-# Enable WSL
-```
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-```
-Install:
-https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
-
-Restart
-```
-wsl --set-default-version 2
-
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install curl wget git build-essential libssl-dev
-```
-
-# Package manager & essentials
+## Package manager & essentials
 https://chocolatey.org/
 ```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+powershell -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherCheck"
 
-choco install wsl-ubuntu-2004
+Set-ExecutionPolicy Bypass -Scope Process
 
-choco install fluent-terminal
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-choco install git
-choco install git-lfs
+choco install git -y
+choco install git-lfs -y
 
-choco install nodejs-lts
-choco install python
-choco install temurin17
+choco install alacritty -y
 
-choco install firacodenf
+choco install nerd-fonts-firacode -y
+choco install nerd-fonts-ubuntumono -y
 
-choco install vscode
-
-sudo apt-get update
-sudo apt-get upgrade
-
-sudo apt-get install xclip xsel
-sudo apt-get install wget ca-certificates
+choco install vscode -y
 ```
 
-# ZSH
+Close PowerShell
+
+Open Git Bash as Admin
+
+## Terminal & shell
+```
+# ZSH shell & zim framework setup
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+zimfw install
+
+choco install micro -y
+
+# Shell prompt & theme customization
+choco install starship -y
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+mkdir -p ~/.config && touch ~/.config/starship.toml
+starship preset no-runtime-versions >> ~/.config/starship.toml
+echo 'command_timeout = 1200\n' | cat - ~/.config/starship.toml > temp && mv temp ~/.config/starship.toml
+echo '\n[aws]\ndisabled=true\n\n[gcloud]\ndisabled=true\n' >> ~/.config/starship.toml
+echo '[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "[$user]($style)"\ndisabled = false\nshow_always = true\n\n[hostname]\nssh_only = false\nformat =  "[@$hostname](green bold) "\ndisabled = false' >> ~/.config/starship.toml
+echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣${behind_count}"\nbehind = "⇣${count}"' >> ~/.config/starship.toml
 ```
 
-sudo apt-get install zsh
+## Alacritty setup
+```
+touch ~/.alacritty.yml
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+micro ~/.alacritty.yml
 
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+# Paste & save this:
+shell:
+  program: C:\Program Files\Git\bin\bash.exe
+  args:
+  - --login
 
-nano ~/.zshrc
+window:
+    dimensions:
+        columns: 128
+        lines: 36
+
+font:
+    size: 14
+    normal:
+        family: UbuntuMono Nerd Font Mono
+
+selection:
+    save_to_clipboard: true
+
+mouse:
+    hints:
+        launcher:
+            program: open
+        modifiers: Command
+
+alt_send_esc: false
+
+key_bindings:
+    - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
+    - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
+    - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   }
+    - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   }
+    - { key: Back,     mods: Command, chars: "\x15"                        }
+    - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
+  
+colors:
+    primary:
+        background: '#0d1117'
+        foreground: '#ffffff'
+    cursor:
+        text: '#F81CE5'
+        cursor: '#ffffff'
+    normal:
+        black:   '#000000'
+        red:     '#fe0100'
+        green:   '#33ff00'
+        yellow:  '#feff00'
+        blue:    '#0066ff'
+        magenta: '#cc00ff'
+        cyan:    '#00ffff'
+        white:   '#d0d0d0'
+    bright:
+        black:   '#808080'
+        red:     '#fe0100'
+        green:   '#33ff00'
+        yellow:  '#feff00'
+        blue:    '#0066ff'
+        magenta: '#cc00ff'
+        cyan:    '#00ffff'
+        white:   '#FFFFFF'
+
 ```
 
-Paste the next line ZSH_THEME="powerlevel9k/powerlevel9k" instead of ZSH_THEME="robbyrussell"
+Start Alacritty
 
+## Programming languages
 ```
-nano ~/.bashrc
+choco install python -y
+choco install temurin17 -y
+choco install nodejs-lts -y
+choco install pnpm -y
+pnpm setup
+pnpm env use --global lts
 ```
-Add `bash -c zsh` to top of file
 
+## Some aliases & tools
+```
+echo 'alias nano="micro"' >> ~/.zshrc
+git config --global core.editor "micro"
 
-# NodeJS
-https://github.com/creationix/nvm#install-script
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+choco install lsd -y
+echo 'alias ls="lsd"' >> ~/.zshrc
+echo 'alias l="ls -l"' >> ~/.zshrc
+echo 'alias la="ls -a"' >> ~/.zshrc
+echo 'alias lla="ls -la"' >> ~/.zshrc
+echo 'alias lt="ls --tree"' >> ~/.zshrc
 
-nano ~/.zshrc
-```
-Paste
-```
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-```
-Save
-```
+choco install bat -y
+echo 'alias cat="bat"' >> ~/.zshrc
+
+echo 'alias pbcopy="xclip -selection clipboard"' >> ~/.zshrc
+echo 'alias pbpaste='xclip -selection clipboard -o'' >> ~/.zshrc
+
 source ~/.zshrc
-nvm install --lts
-nvm use --lts
 ```
-
-# pbcopy alias
-```
-nano ~/.zshrc
-```
-Paste
-```
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-```
-Save
-```
-source ~/.zshrc
-```
-
-https://github.com/dracula/powershell
 
 <br/>
-
-
