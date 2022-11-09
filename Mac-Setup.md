@@ -51,21 +51,35 @@ touch ~/.alacritty.yml
 micro ~/.alacritty.yml
 
 # Paste & save this:
-font:
-    size: 16
-    normal:
-        family: UbuntuMono Nerd Font Mono
 window:
     dimensions:
         columns: 128
         lines: 36
+
+font:
+    size: 14
+    normal:
+        family: UbuntuMono Nerd Font Mono
+
 selection:
     save_to_clipboard: true
+
 mouse:
     hints:
         launcher:
             program: open
         modifiers: Command
+
+alt_send_esc: false
+
+key_bindings:
+    - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
+    - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
+    - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   }
+    - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   }
+    - { key: Back,     mods: Command, chars: "\x15"                        }
+    - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
+  
 colors:
     primary:
         background: '#0d1117'
