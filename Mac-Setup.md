@@ -146,7 +146,7 @@ pnpm install -g yarn
 
 ## Global NodeJS packages
 ```
-pnpm install -g prettier eslint eslint-plugin-prettier rome@next
+pnpm install -g prettier eslint eslint-plugin-prettier rome
 
 pnpm install -g typescript
 
