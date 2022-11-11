@@ -47,7 +47,6 @@ User Settings (JSON):
   // Theme & Icons
   "material-icon-theme.folders.theme": "specific",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "GitHub Dark Default",
   // Workspace tabs
   "window.nativeTabs": true,
   "window.title": "${rootName}",
@@ -56,7 +55,7 @@ User Settings (JSON):
   // Font
   "editor.fontFamily": "FiraCode Nerd Font Mono, Menlo, monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.cursorBlinking": "phase",
   // Terminal
   "terminal.integrated.defaultProfile.osx": "preinstalled-zsh",
@@ -179,6 +178,7 @@ User Settings (JSON):
     "typescriptreact",
   ],
   "eslint.enable": true,
+  "eslint.format.enable": true,
   "eslint.options": {
     "overrideConfig": {
       "env": {
@@ -228,18 +228,48 @@ User Settings (JSON):
   "[javascript][typescript]": {
     "editor.defaultFormatter": "rome.rome"
   },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   "[javascriptreact][typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json][jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
   "css.format.enable": true,
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter",
+          "entity.name.variable.parameter",
+          "parameter.variable"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#e5c07b"
+        }
+      }
+    ]
+  },
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpenView"
+  ],
 }
 ```
