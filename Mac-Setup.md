@@ -124,14 +124,9 @@ No delay dock:
 defaults write com.apple.dock autohide-time-modifier -int 0
 ```
 
-Disable mouse acceleration:
+Mouse options:
 ```
-defaults write .GlobalPreferences com.apple.mouse.scaling -1
-```
-
-Mouse options e.g. normal scroll direction:
-```
-brew install mos
+brew install --cask linearmouse
 ```
 
 ## NodeJS LTS & pnpm & Yarn
