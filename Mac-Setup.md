@@ -215,7 +215,7 @@ brew install --cask Waterfox-current
 # Operating System Utilities
 brew install --cask OnyX
 
-# Disk usage utility (visualizer
+# Disk usage utility (visualizer)
 brew install --cask Disk-Inventory-X
 
 # Screenshot
@@ -224,14 +224,8 @@ brew install --cask Shottr
 # Screen recorder
 brew install --cask Kap
 
-# Containerized application development
-brew install --cask Docker
-
 # IDE
 brew install --cask Visual-Studio-Code
-
-# Android simulator
-brew install --cask Genymotion
 
 # Torrent downloader
 brew install --cask qBittorrent
@@ -280,4 +274,10 @@ brew install --cask Cyberduck
 
 # Web Debugging Proxy
 brew install --cask Charles
+
+# Containerized application development
+brew install --cask Docker
+
+# Android simulator
+brew install --cask Genymotion
 ```
