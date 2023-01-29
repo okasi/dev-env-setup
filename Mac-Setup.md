@@ -140,6 +140,7 @@ brew install --cask linearmouse
 brew install node@18
 brew link node@18 --force
 brew install pnpm
+pnpm install -g pnpm
 pnpm setup
 pnpm env use --global lts
 echo 'alias pn="pnpm"' >> ~/.zshrc
