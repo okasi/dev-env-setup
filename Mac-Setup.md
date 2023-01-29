@@ -2,6 +2,7 @@
 Open terminal.app
 ```
 xcode-select --install
+sudo xcodebuild -license accept
 ```
 
 ## Homebrew setup
