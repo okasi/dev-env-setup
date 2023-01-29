@@ -138,6 +138,7 @@ brew install --cask linearmouse
 ## NodeJS LTS & pnpm & Yarn
 ```
 brew install node@18
+brew link node@18 --force
 brew install pnpm
 pnpm setup
 pnpm env use --global lts
