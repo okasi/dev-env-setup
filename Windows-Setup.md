@@ -113,6 +113,9 @@ key_bindings:
     - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   }
     - { key: Back,     mods: Command, chars: "\x15"                        }
     - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
+    - { key: V, mods: Control, action: Paste }
+    - { key: C, mods: Control, action: Copy }
+    - { key: C, mods: Control|Shift, chars: "\x03" }
 
 colors:
     primary:
