@@ -74,9 +74,9 @@ echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣
 ```
 mkdir ~/AppData/Roaming/alacritty
 
-touch ~/AppData/Roaming/alacritty/alacritty.yaml
+touch ~/AppData/Roaming/alacritty/alacritty.yml
 
-nano ~/AppData/Roaming/alacritty/alacritty.yaml
+nano ~/AppData/Roaming/alacritty/alacritty.yml
 ```
 Paste & save this:
 ```
