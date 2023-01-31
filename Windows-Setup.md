@@ -113,7 +113,7 @@ key_bindings:
     - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   }
     - { key: Back,     mods: Command, chars: "\x15"                        }
     - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
-  
+
 colors:
     primary:
         background: '#0d1117'
