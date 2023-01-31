@@ -18,13 +18,40 @@ choco install nerd-fonts-firacode -y
 choco install nerd-fonts-ubuntumono -y
 
 choco install vscode -y
+
+choco install peazip -y
 ```
 
 Close PowerShell
 
-Open Git Bash as Admin
 
 ## Terminal & shell
+
+Download Latest ZSH .zst (Zstandard compressed file) file, link is to right of "File:"
+https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64
+
+Extract all files to:
+`C:\Program Files\Git`
+
+Now open GIT Bash as Admin, CD to `C:\Program Files\Git` and type: `zsh`
+
+Create config files
+```
+autoload -U zsh-newuser-install
+zsh-newuser-install -f
+```
+
+`notepad ~/.bashrc`
+
+Add these to top of file:
+```
+if [ -t 1 ]; then
+  exec zsh
+fi
+```
+
+Save
+
 ```
 # ZSH shell & zim framework setup
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
@@ -48,8 +75,9 @@ echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣
 touch ~/.alacritty.yml
 
 micro ~/.alacritty.yml
-
-# Paste & save this:
+```
+Paste & save this:
+```
 shell:
   program: C:\Program Files\Git\bin\bash.exe
   args:
