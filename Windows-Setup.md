@@ -12,8 +12,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install git -y
 choco install git-lfs -y
 
-choco install alacritty -y
-
 choco install nerd-fonts-firacode -y
 choco install nerd-fonts-ubuntumono -y
 
@@ -27,47 +25,28 @@ Close PowerShell
 
 ## Terminal & shell
 
-Download Latest ZSH .zst (Zstandard compressed file) file, link is to right of "File:"
-https://packages.msys2.org/package/zsh?repo=msys&variant=x86_64
 
-Extract all files to:
-`C:\Program Files\Git`
+Now open GIT Bash as Admin
 
-Now open GIT Bash as Admin, CD to `C:\Program Files\Git` and type: `zsh`
-
-Create config files
+Setup autocomplete files
 ```
-autoload -U zsh-newuser-install
-zsh-newuser-install -f
+mkdir ~/bash_completion.d   
+curl -o ~/bash_completion.d/git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+echo "source ~/bash_completion.d/git" >> ~/.bashrc
 ```
 
-`notepad ~/.bashrc`
-
-Add these to top of file:
+Install oh my bash:
 ```
-if [ -t 1 ]; then
-  exec zsh
-fi
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 ```
 
 Save
 
 ```
-# ZSH shell & zim framework setup
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
-zimfw install
-
+choco install lsd -y
+choco install bat -y
 choco install micro -y
 
-# Shell prompt & theme customization
-choco install starship -y
-echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-mkdir -p ~/.config && touch ~/.config/starship.toml
-starship preset no-runtime-versions >> ~/.config/starship.toml
-echo 'command_timeout = 1200\n' | cat - ~/.config/starship.toml > temp && mv temp ~/.config/starship.toml
-echo '\n[aws]\ndisabled=true\n\n[gcloud]\ndisabled=true\n' >> ~/.config/starship.toml
-echo '[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "[$user]($style)"\ndisabled = false\nshow_always = true\n\n[hostname]\nssh_only = false\nformat =  "[@$hostname](green bold) "\ndisabled = false' >> ~/.config/starship.toml
-echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣${behind_count}"\nbehind = "⇣${count}"' >> ~/.config/starship.toml
 ```
 
 ## Alacritty setup
