@@ -1,40 +1,47 @@
-Get list of VSCode extensions with:  
-```
+### Get list of VSCode extensions with:  
+```zsh
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
-List of all extensions:
-```
+### List of all extensions:
+```zsh
+# Autocomplete
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension christian-kohler.path-intellisense
-code --install-extension eamodio.gitlens
-code --install-extension GraphQL.vscode-graphql-syntax
-code --install-extension mikestead.dotenv
-code --install-extension mrorz.language-gettext
-code --install-extension pflannery.vscode-versionlens
-code --install-extension quicktype.quicktype
-code --install-extension svelte.svelte-vscode
-code --install-extension Tyriar.sort-lines
-code --install-extension usernamehw.errorlens
 
-# Theming
-code --install-extension github.github-vscode-theme
-code --install-extension PKief.material-icon-theme
-code --install-extension oderwat.indent-rainbow
-
-# Linters
+# Linters & Formaters
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension rome.rome
 
-# YAML
-code --install-extension redhat.vscode-yaml
+# AI Github Copilot
+code --install-extension GitHub.copilot-chat
+code --install-extension GitHub.copilot-nightly
 
-# VCL
-code --install-extension thomas-baumgaertner.vcl
+# Themeing
+code --install-extension GitHub.github-vscode-theme
+code --install-extension PKief.material-icon-theme
+code --install-extension oderwat.indent-rainbow
+code --install-extension usernamehw.errorlens
+
+# GraphQL
+code --install-extension GraphQL.vscode-graphql
+code --install-extension GraphQL.vscode-graphql-syntax
+
+# Gitlens (See git history)
+code --install-extension maattdd.gitless
+
+# Spell checker
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-swedish
+
+# Svelte language support
+code --install-extension svelte.svelte-vscode
 ```
 
-User Settings (JSON):
-```
+---
+
+## User Settings (JSON):
+```json
 {
   // Saving
   "files.autoSave": "onFocusChange",
@@ -160,6 +167,9 @@ User Settings (JSON):
   },
   "[css][scss][less]": {
     "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   // Disable telemetry
   "telemetry.telemetryLevel": "off",
