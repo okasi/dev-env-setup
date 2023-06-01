@@ -38,34 +38,16 @@ User Settings (JSON):
 {
   // Saving
   "files.autoSave": "onFocusChange",
-  "files.autoSaveDelay": 800,
-  // Always show minimap
-  "editor.minimap.showSlider": "always",
-  // Shows line of blocks, better performance
-  "editor.minimap.renderCharacters": false,
+  // Startup screen
   "workbench.startupEditor": "newUntitledFile",
-  // Theme & Icons
-  "material-icon-theme.folders.theme": "specific",
-  "workbench.iconTheme": "material-icon-theme",
-  // Workspace tabs
-  "window.nativeTabs": true,
-  "window.title": "${rootName}",
-  // Window zoom
-  "window.zoomLevel": -1,
   // Font
-  "editor.fontFamily": "FiraCode Nerd Font Mono, Menlo, monospace",
-  "editor.fontLigatures": true,
   "editor.fontSize": 16,
+  "editor.fontFamily": "FiraCode Nerd Font Mono, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.cursorBlinking": "phase",
   // Terminal
-  "terminal.integrated.defaultProfile.osx": "preinstalled-zsh",
-  "terminal.integrated.profiles.osx": {
-    "preinstalled-zsh": {
-      "path": "/bin/zsh", // Explicitly specify preinstalled zsh
-    },
-  },
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontFamily": "UbuntuMono Nerd Font Mono, Menlo, monospace",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "UbuntuMono Nerd Font Mono, 'Courier New', monospace",
   "terminal.integrated.env.windows": {
     "LC_ALL": "C.UTF-8"
   },
@@ -74,182 +56,35 @@ User Settings (JSON):
   },
   "terminal.integrated.ignoreProcessNames": [
     "starship",
-    "zsh"
+    "zsh",
+    "bash",
+    "oh-my-zsh",
+    "fish",
+    "oh-my-bash"
   ],
-  // Reopen workspace on start
-  "window.restoreWindows": "folders",
-  // Disable preview
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": true,
-  // Trust files
-  "security.workspace.trust.untrustedFiles": "open",
-  // Exlude watching some files, for performance
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/.git": true,
-    "**/.cache/**": true,
-    "**/node_modules/**": true,
-    "**/node_modules/": true,
-    "**/.yarn/**": true,
-    "**/.yarn/": true,
-    "**/package-lock.json": true,
-    "**/yarn.lock": true,
-    "**/pnpm-lock.yaml": true,
-    "**/public/**": true,
-    "**/tmp/**": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/tsconfig.tsbuildinfo": true,
-    "**/.eslintcache": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/log/**": true,
-    "**/logs/**": true,
-    "**/.fdk/**": true
+  "terminal.integrated.profiles.osx": {
+    "preinstalled-zsh": {
+      "path": "/bin/zsh",
+    },
   },
-  "search.exclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/.git": true,
-    "**/.cache/**": true,
-    "**/node_modules/**": true,
-    "**/node_modules/": true,
-    "**/.yarn/**": true,
-    "**/.yarn/": true,
-    "**/package-lock.json": true,
-    "**/yarn.lock": true,
-    "**/pnpm-lock.yaml": true,
-    "**/public/**": true,
-    "**/tmp/**": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/tsconfig.tsbuildinfo": true,
-    "**/.eslintcache": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/log/**": true,
-    "**/logs/**": true,
-    "**/.fdk/**": true
-  },
-  // Suggestions
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": false
-  },
-  "editor.quickSuggestionsDelay": 90,
-  // Gitlens
-  "gitlens.views.repositories.location": "gitlens",
-  "gitlens.views.fileHistory.location": "gitlens",
-  "gitlens.views.lineHistory.location": "gitlens",
-  "gitlens.views.compare.location": "gitlens",
-  "gitlens.views.search.location": "gitlens",
-  // Confirm delete
-  "explorer.confirmDelete": true,
-  // Automaticly fetch
-  "git.autofetch": true,
-  // No need to confirm sync
-  "git.confirmSync": false,
-  // Color for git status
-  "git.decorations.enabled": true,
-  // No need to confirm drag and drop
-  "explorer.confirmDragAndDrop": false,
-  // Show parent folder name in tab of file
-  "workbench.editor.labelFormat": "short",
-  // Format
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": false,
-  "emmet.preferences": {
-    "output.inlineBreak": 1
-  },
-  // Linting
-  "eslint.runtime": "node",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
+  "terminal.integrated.defaultProfile.osx": "preinstalled-zsh",
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpenView"
   ],
-  "eslint.enable": true,
-  "eslint.format.enable": true,
-  "eslint.options": {
-    "overrideConfig": {
-      "env": {
-        "browser": true,
-        "node": true
-      },
-      "parserOptions": {
-        "ecmaVersion": 2017
-      },
-      "rules": {
-        "prettier/prettier": "error",
-        "arrow-body-style": "off",
-        "prefer-arrow-callback": "off"
-      }
-    }
-  },
-  "eslint.codeActionsOnSave.mode": "problems",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  // Disable telemetry
-  "telemetry.telemetryLevel": "off",
-  "enable-crash-reporter": false,
-  "workbench.enableExperiments": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "extensions.autoCheckUpdates": false,
-  // Bracket pair color
-  "editor.guides.bracketPairs": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.highlightActiveIndentation": true,
-  "editor.guides.bracketPairsHorizontal": "active",
-  // Typescript & Experimental JavaScript options
-  "typescript.disableAutomaticTypeAcquisition": true,
-  "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  // Prevents VS Code linting JavaScript with the default linter
-  "javascript.validate.enable": false,
-  // Prevents VS Code from formatting JavaScript with the default linter
-  "javascript.format.enable": false,
-  // Associate JSX & TSX with React syntax
-  "files.associations": {
-    "*.tsx": "typescriptreact",
-    "*.jsx": "javascriptreact",
-    "*.graphql": "graphql"
-  },
-  // Formatters
-  "[javascript][typescript]": {
-    "editor.defaultFormatter": "rome.rome"
-  },
-  "[javascriptreact][typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[json][jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "css.format.enable": true,
-  "[css][scss][less]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
+  // Icon theme
+  "workbench.iconTheme": "material-icon-theme",
+  // Workbench theme
   "workbench.colorTheme": "GitHub Dark Default",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
+      // Italic comments
       {
         "scope": "comment",
         "settings": {
           "fontStyle": "italic"
         }
       },
+      // Italic parameters
       {
         "scope": [
           "variable.parameter",
@@ -260,16 +95,152 @@ User Settings (JSON):
           "fontStyle": "italic"
         }
       },
+      // Light beige strings
       {
         "scope": "string",
         "settings": {
-          "foreground": "#e5c07b"
+          "foreground": "#F1C677"
         }
       }
     ]
   },
-  "terminal.integrated.commandsToSkipShell": [
-    "-workbench.action.quickOpenView"
-  ],
+  // Disable preview
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": true,
+  // Trust files
+  "security.workspace.trust.untrustedFiles": "open",
+  // Suggestions
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  // Slight delay for suggestions to appear (ms), better performance
+  "editor.quickSuggestionsDelay": 110,
+  // Show parent directories / folder names in tab of file
+  "workbench.editor.labelFormat": "medium",
+  // Formatting
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  // Linting
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  // Linting - ESLint specific
+  "eslint.runtime": "node",
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  // Prevents VS Code linting JavaScript with the default linter
+  "javascript.validate.enable": false,
+  // Prevents VS Code from formatting JavaScript with the default linter
+  "javascript.format.enable": false,
+  // Bracket pair color
+  "editor.guides.bracketPairs": true,
+  // Typescript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Experimental TypeScript / JavaScript options
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  // Associate file extensions with corresponding syntax
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    "*.graphql": "graphql"
+  },
+  // Formatters
+  "[javascript][typescript][javascriptreact][typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html][liquid]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css][scss][less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  // Disable telemetry
+  "telemetry.telemetryLevel": "off",
+  "extensions.autoCheckUpdates": false,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  // Always show minimap
+  "editor.minimap.showSlider": "always",
+  // Shows line of blocks, better performance
+  "editor.minimap.renderCharacters": false,
+  // Exclude watching some files, for performance
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.cache/**": true,
+    "**/.next/**": true,
+    "**/_next/**": true,
+    "**/.yarn/**": true,
+    "**/.idea/**": true,
+    "**/.swc/**": true,
+    "**/__snapshots__/**": true,
+    "**/storybook-static/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/{log,logs}/**": true,
+    "**/.fdk/**": true,
+    "**/.npm/**": true,
+    "**/coverage/**": true,
+    "**/out/**": true,
+    "**/next-env.d.ts": true,
+    "**/tsconfig.tsbuildinfo": true,
+    "**/.eslintcache": true,
+    "**/.DS_Store": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true
+  },
+  "search.exclude": {
+    "**/.git/**": true,
+    "**/.cache/**": true,
+    "**/.next/**": true,
+    "**/_next/**": true,
+    "**/.yarn/**": true,
+    "**/.idea/**": true,
+    "**/.swc/**": true,
+    "**/__snapshots__/**": true,
+    "**/storybook-static/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/{log,logs}/**": true,
+    "**/.fdk/**": true,
+    "**/.npm/**": true,
+    "**/coverage/**": true,
+    "**/out/**": true,
+    "**/next-env.d.ts": true,
+    "**/tsconfig.tsbuildinfo": true,
+    "**/.eslintcache": true,
+    "**/.DS_Store": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/pnpm-lock.yaml": true
+  },
+  // Spelling check languages
+  "cSpell.language": "en,sv",
+  // Github Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+  },
+  // Window settings
+  "window.restoreWindows": "folders",
+  "window.nativeTabs": true,
+  "window.title": "${rootName}",
+  "window.zoomLevel": -1,
 }
 ```
