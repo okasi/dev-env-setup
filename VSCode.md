@@ -71,8 +71,8 @@ code --install-extension svelte.svelte-vscode
   ],
   "terminal.integrated.profiles.osx": {
     "preinstalled-zsh": {
-      "path": "/bin/zsh",
-    },
+      "path": "/bin/zsh"
+    }
   },
   "terminal.integrated.defaultProfile.osx": "preinstalled-zsh",
   "terminal.integrated.commandsToSkipShell": [
@@ -183,74 +183,76 @@ code --install-extension svelte.svelte-vscode
   // Exclude watching some files, for performance
   "files.watcherExclude": {
     "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.yarn/**": true,
+    "**/.idea/**": true,
     "**/.cache/**": true,
     "**/.next/**": true,
     "**/_next/**": true,
-    "**/.yarn/**": true,
-    "**/.idea/**": true,
+    "**/next-env.d.ts": true,
+    "**/out/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
     "**/.swc/**": true,
     "**/__snapshots__/**": true,
     "**/storybook-static/**": true,
-    "**/node_modules/**": true,
     "**/tmp/**": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/bower_components/**": true,
-    "**/dist/**": true,
     "**/{log,logs}/**": true,
     "**/.fdk/**": true,
     "**/.npm/**": true,
     "**/coverage/**": true,
-    "**/out/**": true,
-    "**/next-env.d.ts": true,
-    "**/tsconfig.tsbuildinfo": true,
     "**/.eslintcache": true,
     "**/.DS_Store": true,
     "**/package-lock.json": true,
     "**/yarn.lock": true,
-    "**/pnpm-lock.yaml": true
+    "**/pnpm-lock.yaml": true,
+    "**/*.tsbuildinfo": true
   },
   "search.exclude": {
     "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.yarn/**": true,
+    "**/.idea/**": true,
     "**/.cache/**": true,
     "**/.next/**": true,
     "**/_next/**": true,
-    "**/.yarn/**": true,
-    "**/.idea/**": true,
+    "**/next-env.d.ts": true,
+    "**/out/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
     "**/.swc/**": true,
     "**/__snapshots__/**": true,
     "**/storybook-static/**": true,
-    "**/node_modules/**": true,
     "**/tmp/**": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/bower_components/**": true,
-    "**/dist/**": true,
     "**/{log,logs}/**": true,
     "**/.fdk/**": true,
     "**/.npm/**": true,
     "**/coverage/**": true,
-    "**/out/**": true,
-    "**/next-env.d.ts": true,
-    "**/tsconfig.tsbuildinfo": true,
     "**/.eslintcache": true,
     "**/.DS_Store": true,
     "**/package-lock.json": true,
     "**/yarn.lock": true,
-    "**/pnpm-lock.yaml": true
+    "**/pnpm-lock.yaml": true,
+    "**/*.tsbuildinfo": true
   },
   // Spelling check languages
   "cSpell.language": "en,sv",
   // Github Copilot settings
   "github.copilot.enable": {
-    "*": true,
+    "*": true
   },
   // Window settings
   "window.restoreWindows": "folders",
   "window.nativeTabs": true,
   "window.title": "${rootName}",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -1
 }
 ```
