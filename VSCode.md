@@ -138,6 +138,20 @@ code --install-extension svelte.svelte-vscode
   "eslint.runtime": "node",
   "eslint.format.enable": true,
   "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.options": {
+    "overrideConfig": {
+      "env": {
+        "browser": true,
+        "node": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 2017
+      },
+      "rules": {
+        "prettier/prettier": "error",
+      }
+    }
+  },
   // Prevents VS Code linting JavaScript with the default linter
   "javascript.validate.enable": false,
   // Prevents VS Code from formatting JavaScript with the default linter
@@ -157,7 +171,7 @@ code --install-extension svelte.svelte-vscode
   },
   // Formatters
   "[javascript][typescript][javascriptreact][typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json][jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -253,6 +267,7 @@ code --install-extension svelte.svelte-vscode
   "window.restoreWindows": "folders",
   "window.nativeTabs": true,
   "window.title": "${rootName}",
-  "window.zoomLevel": -1
+  "window.zoomLevel": -1,
+  "editor.inlineSuggest.enabled": true
 }
 ```
