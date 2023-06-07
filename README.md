@@ -1,18 +1,21 @@
 # 🛠 My Development Environment Setup
 Welcome to my personal development environment setup!  
-Here, I've documented the specifics of my environment for both my own reference and for anyone who might find it useful. 🌍
+Here, I've documented the specifics of my environment for both my own reference  
+and for anyone who might find it useful. 🌍
 
 
 ## 🖥 Why macOS?
 I mainly prefer to use **macOS** for a couple of reasons:
 
 1️⃣ **Unix-based:**  
-Being Unix-based, macOS comes with a number of built-in tools and utilities that can be very handy for developers.  
+Being Unix-based, macOS comes with a number of built-in tools  
+and utilities that can be very handy for developers.  
 It offers the power of Unix, but with a beautiful and user-friendly interface.
 
 2️⃣ **iOS Development:**  
 If you're into iOS development, then macOS is a must.  
-Apple's development tools such as Xcode and Swift Playgrounds only run on macOS, making it the primary choice for iOS developers.
+Apple's development tools such as Xcode and Swift Playgrounds only run on macOS,  
+making it the primary choice for iOS developers.
 
 
 ## 📦 What's Inside?
