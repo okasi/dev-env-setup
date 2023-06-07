@@ -30,11 +30,11 @@ Feel free to use this as a starting point for setting up your own development en
 ## 🚀 Getting Started
 Here's how to get your environment set up just like mine...
 
-1️⃣ [/Mac-Setup.md](/Mac-Setup.md) || [/Windows-Setup.md](/Windows-Setup.md)  
-2️⃣ [/Git-Setup.md](/Git-Setup.md)  
-3️⃣ [/VSCode.md](/VSCode.md)  
+1️⃣ **[/Mac-Setup.md](/Mac-Setup.md)** || **[/Windows-Setup.md](/Windows-Setup.md)**  
+2️⃣ **[/Git-Setup.md](/Git-Setup.md)**  
+3️⃣ **[/VSCode.md](/VSCode.md)**  
 *Optional:*  
-4️⃣ [/VPS-Setup.md](/VPS-Setup.md)
+4️⃣ **[/VPS-Setup.md](/VPS-Setup.md)**
 
 
 ## 🙏 Contributions
