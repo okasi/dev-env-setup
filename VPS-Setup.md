@@ -48,13 +48,14 @@ echo '[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "
 echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣${behind_count}"\nbehind = "⇣${count}"' >> ~/.config/starship.toml
 
 curl https://getmic.ro | zsh
+source /root/.zshrc
 ```
 
 ### Install Node LTS (v18)
 ```
 curl -sL https://deb.nodesource.com/setup_18.x | sudo zsh -
-
 sudo apt-get install -y nodejs && sudo apt-get update
+source /root/.zshrc
 ```
 
 ### Install yarn
@@ -62,11 +63,13 @@ sudo apt-get install -y nodejs && sudo apt-get update
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
 echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn
+source /root/.zshrc
 ```
 
 ### Install PNPM
 ```
 curl -fsSL https://get.pnpm.io/install.sh | sh -
+source /root/.zshrc
 ```
 
 ### Install pm2
