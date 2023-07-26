@@ -24,18 +24,33 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl wget xclip && sudo apt-get install gcc g++ make
 ```
 
-## Install fish shell & starship
+### Make sure ssh is password 
 ```
-sudo apt-get install fish
-fish
-chsh -s /usr/bin/fish
-mkdir -p ~/.config/fish
-echo "set -g -x fish_greeting ''" >> ~/.config/fish/config.fish
+sudo nano /etc/ssh/sshd_config
+
+Locate the PasswordAuthentication attribute and set it to yes 
+
+
+```
+
+## Install zsh shell & zim framework & starship & micro
+```
+sudo apt-get install zsh
+zsh
+chsh -s /usr/bin/zsh
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+zimfw install
 
 curl -sS https://starship.rs/install.sh | sh
-echo "starship init fish | source" >> ~/.config/fish/config.fish
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 mkdir -p ~/.config && touch ~/.config/starship.toml
-starship preset bracketed-segments > ~/.config/starship.toml
+starship preset no-runtime-versions >> ~/.config/starship.toml
+echo 'command_timeout = 1200\n' | cat - ~/.config/starship.toml > temp && mv temp ~/.config/starship.toml
+echo '\n[aws]\ndisabled=true\n\n[gcloud]\ndisabled=true\n' >> ~/.config/starship.toml
+echo '[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "[$user]($style)"\ndisabled = false\nshow_always = true\n\n[hostname]\nssh_only = false\nformat =  "[@$hostname](green bold) "\ndisabled = false' >> ~/.config/starship.toml
+echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣${behind_count}"\nbehind = "⇣${count}"' >> ~/.config/starship.toml
+
+curl https://getmic.ro | zsh
 ```
 
 ### Install Node LTS (v18)
