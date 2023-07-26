@@ -23,6 +23,7 @@ sudo apt update && sudo apt upgrade -y
 ```
 sudo apt install curl wget xclip && sudo apt-get install gcc g++ make
 ```
+"keep the local version currently installed"
 
 ## Install zsh shell & zim framework & starship & micro
 ```
