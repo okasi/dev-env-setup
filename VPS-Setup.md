@@ -28,11 +28,16 @@ sudo apt install curl wget xclip && sudo apt-get install gcc g++ make
 ## Install zsh shell & zim framework & starship & micro
 ```
 sudo apt-get install zsh
+```
+```
 zsh
+```
+```
 chsh -s /usr/bin/zsh
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 zimfw install
-
+```
+```
 curl -sS https://starship.rs/install.sh | sh
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 mkdir -p ~/.config && touch ~/.config/starship.toml
