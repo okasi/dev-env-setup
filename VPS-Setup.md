@@ -74,8 +74,8 @@ cat ~/.ssh/id_rsa.pub
 
 ### Config git
 ```
-git config --global user.email "okasi@pm.me"
-git config --global user.name "okasi"
+git config --global user.email "<GITHUB EMAIL>"
+git config --global user.name "<GITHUB USERNAME>"
 ```
 
 ### Create short alias ("pn") for PNPM
