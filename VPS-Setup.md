@@ -47,7 +47,7 @@ curl https://getmic.ro | zsh
 
 ### Install Node LTS (v18)
 ```
-curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_18.x | sudo zsh -
 
 sudo apt-get install -y nodejs && sudo apt-get update
 ```
