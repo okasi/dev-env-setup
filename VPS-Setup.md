@@ -24,15 +24,6 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl wget xclip && sudo apt-get install gcc g++ make
 ```
 
-### Make sure ssh is password 
-```
-sudo nano /etc/ssh/sshd_config
-
-Locate the PasswordAuthentication attribute and set it to yes 
-
-
-```
-
 ## Install zsh shell & zim framework & starship & micro
 ```
 sudo apt-get install zsh
@@ -93,9 +84,15 @@ git config --global user.email "<GITHUB EMAIL>"
 git config --global user.name "<GITHUB USERNAME>"
 ```
 
+### Make sure ssh has PasswordAuthentication active
+```
+sudo nano /etc/ssh/sshd_config
+```
+Locate the PasswordAuthentication attribute and set it to yes 
+
 ### Create short alias ("pn") for PNPM
 ```
-nano ~/.bashrc
+nano ~/.zsh
 ```
 
 Paste in end:
@@ -106,10 +103,6 @@ then save
 
 then source
 ```
-source ~/.bashrc
+source ~/.zsh
 ```
 
-### Install cloudpanel
-```
-curl -sSL https://installer.cloudpanel.io/ce/v2/install.sh | sudo bash
-```
