@@ -159,7 +159,15 @@ pnpm install -g nodemon @vercel/ncc
 pnpm install -g serve localtunnel vercel
 ```
 
-## Expo / React Native stuff
+## Java
+```
+brew tap homebrew/cask-versions
+brew install --cask temurin17
+export JAVA_HOME=$(/usr/libexec/java_home -v '17*')
+brew install maven
+```
+
+## Expo / React Native
 
 Xcode:
 https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip
@@ -171,10 +179,6 @@ https://developer.android.com/studio/index.html
 brew install watchman
 brew install cocoapods
 brew install ios-deploy
-
-brew tap homebrew/cask-versions
-brew install --cask temurin17
-export JAVA_HOME=$(/usr/libexec/java_home -v '17*')
 
 brew cask install android-sdk
 brew cask install android-platform-tools
