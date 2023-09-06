@@ -120,7 +120,6 @@ Start new terminal (Alacritty)
 
 
 ## Misc macOS fixes/optimization
-
 Allow apps from anywhere:
 ```
 sudo spctl --master-disable
@@ -168,13 +167,6 @@ brew install maven
 ```
 
 ## Expo / React Native
-
-Xcode:
-https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip
-
-Android Studio:
-https://developer.android.com/studio/index.html
-
 ```
 brew install watchman
 brew install cocoapods
