@@ -166,6 +166,12 @@ export JAVA_HOME=$(/usr/libexec/java_home -v '17*')
 brew install maven
 ```
 
+## Python
+```
+brew install python3
+brew install jupyterlab
+```
+
 ## Expo / React Native
 ```
 brew install watchman
