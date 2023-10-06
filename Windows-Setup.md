@@ -27,6 +27,7 @@ choco install lightshot -y
 choco install vscode-insiders -y
 choco install windirstat -y
 choco install open-shell -y
+choco install notepadplusplus -y
 ```
 
 
