@@ -1,6 +1,10 @@
-Start PowerShell as Admin
+Start PowerShell as Admin:
+- Windows+R to open run window
+- Type "Powershell"
+- Ctrl+Shift+Enter to open with admin privileges 
 
-## Package manager & essentials
+
+## Package manager Chocolatey
 https://chocolatey.org/
 ```
 powershell -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherCheck"
@@ -8,7 +12,26 @@ powershell -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherC
 Set-ExecutionPolicy Bypass -Scope Process
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
 
+Optional programs
+```
+choco install opera -y
+choco install qbittorrent -y
+choco install peazip -y
+choco install discord -y
+choco install steam -y
+choco install vlc -y
+choco install irfanview -y
+choco install lightshot -y
+choco install vscode-insiders -y
+choco install windirstat -y
+choco install open-shell -y
+```
+
+
+Dev essentials
+```
 choco install git -y
 choco install git-lfs -y
 
