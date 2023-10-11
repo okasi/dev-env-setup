@@ -18,7 +18,7 @@ Optional programs
 ```
 choco install opera -y
 choco install qbittorrent -y
-choco install peazip -y
+choco install peazip.install -y
 choco install discord -y
 choco install steam -y
 choco install vlc -y
@@ -27,7 +27,7 @@ choco install lightshot -y
 choco install vscode-insiders -y
 choco install windirstat -y
 choco install open-shell -y
-choco install notepadplusplus -y
+choco install notepadplusplus.install -y
 ```
 
 
