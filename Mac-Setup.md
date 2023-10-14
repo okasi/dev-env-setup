@@ -201,6 +201,9 @@ brew install php
 ## Apps
 ```
 # To mount NTFS drives
+brew tap gromgit/homebrew-fuse
+brew install --cask macfuse
+brew install ntfs-3g-mac
 brew install --cask Mounty
 
 # Move and resize windows with keyboard shortcuts
