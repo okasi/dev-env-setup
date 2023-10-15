@@ -181,4 +181,12 @@ echo 'alias pbpaste="xclip -selection clipboard -o"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+
+## Git bash theme
+- Text
+  - UbuntuMono Nerd Font Mono, 11pt
+- Window
+  - Columns: 128
+  - Rows: 36
+
 <br/>
