@@ -153,8 +153,10 @@ Start Alacritty
 ## Programming languages
 ```
 choco install python -y
-choco install temurin17 -y
 choco install nodejs-lts -y
+
+choco install temurin17 -y
+
 choco install pnpm -y
 pnpm setup
 pnpm env use --global lts
@@ -162,23 +164,23 @@ pnpm env use --global lts
 
 ## Some aliases & tools
 ```
-echo 'alias nano="micro"' >> ~/.zshrc
+echo 'alias nano="micro"' >> ~/.bashrc
 git config --global core.editor "micro"
 
-choco install lsd -y
-echo 'alias ls="lsd"' >> ~/.zshrc
-echo 'alias l="ls -l"' >> ~/.zshrc
-echo 'alias la="ls -a"' >> ~/.zshrc
-echo 'alias lla="ls -la"' >> ~/.zshrc
-echo 'alias lt="ls --tree"' >> ~/.zshrc
+sudo apt install lsd -y
+echo 'alias ls="lsd"' >> ~/.bashrc
+echo 'alias l="ls -l"' >> ~/.bashrc
+echo 'alias la="ls -a"' >> ~/.bashrc
+echo 'alias lla="ls -la"' >> ~/.bashrc
+echo 'alias lt="ls --tree"' >> ~/.bashrc
 
-choco install bat -y
-echo 'alias cat="bat"' >> ~/.zshrc
+sudo apt install bat -y
+echo 'alias cat="bat"' >> ~/.bashrc
 
-echo 'alias pbcopy="xclip -selection clipboard"' >> ~/.zshrc
-echo 'alias pbpaste='xclip -selection clipboard -o'' >> ~/.zshrc
+echo 'alias pbcopy="xclip -selection clipboard"' >> ~/.bashrc
+echo 'alias pbpaste="xclip -selection clipboard -o"' >> ~/.bashrc
 
-source ~/.zshrc
+source ~/.bashrc
 ```
 
 <br/>
