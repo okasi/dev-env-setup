@@ -67,7 +67,6 @@ Save
 choco install lsd -y
 choco install bat -y
 choco install micro -y
-
 ```
 
 
