@@ -167,14 +167,12 @@ pnpm env use --global lts
 echo 'alias nano="micro"' >> ~/.bashrc
 git config --global core.editor "micro"
 
-sudo apt install lsd -y
 echo 'alias ls="lsd"' >> ~/.bashrc
 echo 'alias l="ls -l"' >> ~/.bashrc
 echo 'alias la="ls -a"' >> ~/.bashrc
 echo 'alias lla="ls -la"' >> ~/.bashrc
 echo 'alias lt="ls --tree"' >> ~/.bashrc
 
-sudo apt install bat -y
 echo 'alias cat="bat"' >> ~/.bashrc
 
 echo 'alias pbcopy="xclip -selection clipboard"' >> ~/.bashrc
