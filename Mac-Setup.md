@@ -163,11 +163,13 @@ brew install pnpm
 
 ## Global NodeJS packages
 ```
-npm install -g prettier eslint eslint-plugin-prettier rome
+npm install -g prettier eslint eslint-plugin-prettier
 
 npm install -g typescript
 
-npm install -g nodemon @vercel/ncc
+npm install -g @biomejs/biome
+
+npm install -g ts-node nodemon @vercel/ncc
 
 npm install -g serve localtunnel vercel
 ```
