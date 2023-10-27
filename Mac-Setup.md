@@ -153,27 +153,23 @@ Mouse options:
 brew install --cask linearmouse
 ```
 
-## NodeJS LTS & pnpm & Yarn
+## NodeJS LTS & Yarn & pnpm
 ```
 brew install node@18
 brew link node@18 --force
+brew install yarn
 brew install pnpm
-pnpm install -g pnpm
-pnpm setup
-pnpm env use --global lts
-echo 'alias pn="pnpm"' >> ~/.zshrc
-pnpm install -g yarn
 ```
 
 ## Global NodeJS packages
 ```
-pnpm install -g prettier eslint eslint-plugin-prettier rome
+npm install -g prettier eslint eslint-plugin-prettier rome
 
-pnpm install -g typescript
+npm install -g typescript
 
-pnpm install -g nodemon @vercel/ncc
+npm install -g nodemon @vercel/ncc
 
-pnpm install -g serve localtunnel vercel
+npm install -g serve localtunnel vercel
 ```
 
 ## Java
