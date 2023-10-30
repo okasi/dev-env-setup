@@ -153,12 +153,14 @@ Mouse options:
 brew install --cask linearmouse
 ```
 
-## NodeJS LTS & Yarn & pnpm
+## NodeJS LTS & Yarn & pnpm & bun
 ```
-brew install node@18
-brew link node@18 --force
+brew install node@20
+brew link node@20 --force
 brew install yarn
 brew install pnpm
+brew tap oven-sh/bun
+brew install bun
 ```
 
 ## Global NodeJS packages
