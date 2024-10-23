@@ -153,14 +153,11 @@ Mouse options:
 brew install --cask linearmouse
 ```
 
-## NodeJS LTS & Yarn & pnpm & bun
+## NodeJS LTS & pnpm
 ```
 brew install node@20
 brew link node@20 --force
-brew install yarn
-brew install pnpm
-brew tap oven-sh/bun
-brew install bun
+npm install -g pnpm
 ```
 
 ## Global NodeJS packages
@@ -169,9 +166,7 @@ npm install -g prettier eslint eslint-plugin-prettier
 
 npm install -g typescript
 
-npm install -g @biomejs/biome
-
-npm install -g ts-node nodemon @vercel/ncc
+npm install -g ts-node nodemon
 
 npm install -g serve localtunnel vercel
 ```
@@ -186,8 +181,14 @@ brew install maven
 
 ## Python
 ```
-brew install python3
-brew install jupyterlab
+brew install cmake
+brew install pkg-config
+brew install --cask miniconda
+conda create -n py311 python=3.11
+conda activate py311
+python --version
+conda install jupyter
+conda install pytorch torchvision -c pytorch
 ```
 
 ## Expo / React Native
