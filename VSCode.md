@@ -5,27 +5,13 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 
 ### List of all extensions:
 ```zsh
-# Autocomplete
-code --install-extension bradlc.vscode-tailwindcss
-code --install-extension christian-kohler.path-intellisense
-
 # Linters & Formaters
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension rome.rome
-
-# AI Github Copilot
-code --install-extension GitHub.copilot-chat
-code --install-extension GitHub.copilot-nightly
 
 # Themeing
-code --install-extension GitHub.github-vscode-theme
 code --install-extension PKief.material-icon-theme
-code --install-extension oderwat.indent-rainbow
 code --install-extension usernamehw.errorlens
-
-# GraphQL
-code --install-extension GraphQL.vscode-graphql
-code --install-extension GraphQL.vscode-graphql-syntax
+code --install-extension oderwat.indent-rainbow
 
 # Gitlens (See git history)
 code --install-extension maattdd.gitless
@@ -34,8 +20,11 @@ code --install-extension maattdd.gitless
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-swedish
 
-# Svelte language support
-code --install-extension svelte.svelte-vscode
+# Autocomplete
+code --install-extension bradlc.vscode-tailwindcss
+
+# AI 
+code --install-extension continue.continue
 ```
 
 ---
