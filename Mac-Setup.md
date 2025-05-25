@@ -69,74 +69,6 @@ p() {
 ```
 
 
-## Install Alacritty
-```
-brew install --cask --no-quarantine alacritty
-
-touch ~/.alacritty.yml
-
-micro ~/.alacritty.yml
-
-# Paste & save this:
-window:
-    dimensions:
-        columns: 128
-        lines: 36
-
-font:
-    size: 14
-    normal:
-        family: UbuntuMono Nerd Font Mono
-
-selection:
-    save_to_clipboard: true
-
-mouse:
-    hints:
-        launcher:
-            program: open
-        modifiers: Command
-
-alt_send_esc: false
-
-key_bindings:
-    - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
-    - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
-    - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   }
-    - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   }
-    - { key: Back,     mods: Command, chars: "\x15"                        }
-    - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
-  
-colors:
-    primary:
-        background: '#0d1117'
-        foreground: '#ffffff'
-    cursor:
-        text: '#F81CE5'
-        cursor: '#ffffff'
-    normal:
-        black:   '#000000'
-        red:     '#fe0100'
-        green:   '#33ff00'
-        yellow:  '#feff00'
-        blue:    '#0066ff'
-        magenta: '#cc00ff'
-        cyan:    '#00ffff'
-        white:   '#d0d0d0'
-    bright:
-        black:   '#808080'
-        red:     '#fe0100'
-        green:   '#33ff00'
-        yellow:  '#feff00'
-        blue:    '#0066ff'
-        magenta: '#cc00ff'
-        cyan:    '#00ffff'
-        white:   '#FFFFFF'
-```
-
-Start new terminal (Alacritty)
-
-
 ## Misc macOS fixes/optimization
 Allow apps from anywhere:
 ```
@@ -155,8 +87,8 @@ brew install --cask linearmouse
 
 ## NodeJS LTS & pnpm
 ```
-brew install node@20
-brew link node@20 --force
+brew install node@22
+brew link node@22 --force
 npm install -g pnpm
 ```
 
@@ -184,8 +116,8 @@ brew install maven
 brew install cmake
 brew install pkg-config
 brew install --cask miniconda
-conda create -n py311 python=3.11
-conda activate py311
+conda create -n py312 python=3.12
+conda activate py312
 python --version
 conda install jupyter
 conda install pytorch torchvision -c pytorch
@@ -237,9 +169,6 @@ brew install --cask Keka
 # Open source Firefox (web browser) fork
 brew install --cask Waterfox-current
 
-# Operating System Utilities
-brew install --cask OnyX
-
 # Disk usage utility (visualizer)
 brew install --cask Disk-Inventory-X
 
@@ -260,21 +189,6 @@ brew install --cask sdFormatter
 
 # Flash OS images to SD cards & USB drives
 brew install --cask balenaEtcher
-
-# Workspace text chat
-brew install --cask Slack
-
-# Workspace video chat
-brew install --cask Zoom
-
-# Community chat
-brew install --cask Discord
-
-# Private chat
-brew install --cask Telegram
-
-# Note taking
-brew install --cask Notion
 
 # Remote desktop
 brew install --cask AnyDesk
