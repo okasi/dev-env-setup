@@ -34,17 +34,6 @@ echo '\n[aws]\ndisabled=true\n\n[gcloud]\ndisabled=true\n' >> ~/.config/starship
 echo '[username]\nstyle_user = "green bold"\nstyle_root = "red bold"\nformat = "[$user]($style)"\ndisabled = false\nshow_always = true\n\n[hostname]\nssh_only = false\nformat =  "[@$hostname](green bold) "\ndisabled = false' >> ~/.config/starship.toml
 echo '\n[git_status]\nahead = "⇡${count}"\ndiverged = "⇕⇡${ahead_count}⇣${behind_count}"\nbehind = "⇣${count}"' >> ~/.config/starship.toml
 
-# Modern replacement for "cat" (display contents of file)
-brew install bat
-echo 'alias cat="bat"' >> ~/.zshrc
-
-# Modern replacement for "ls" (list directories)
-brew install exa
-echo 'alias l="exa"' >> ~/.zshrc
-echo 'alias la="exa -a"' >> ~/.zshrc
-echo 'alias ll="exa -lah"' >> ~/.zshrc
-echo 'alias ls="exa --color=auto"' >> ~/.zshrc
-
 # Modern replacement for "nano" (editor)
 brew install micro
 echo 'alias nano="micro"' >> ~/.zshrc
