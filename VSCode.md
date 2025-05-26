@@ -20,11 +20,11 @@ code --install-extension maattdd.gitless
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-swedish
 
-# Autocomplete
-code --install-extension bradlc.vscode-tailwindcss
-
 # AI 
 code --install-extension continue.continue
+
+# Autocomplete
+code --install-extension bradlc.vscode-tailwindcss
 ```
 
 ---
