@@ -8,17 +8,13 @@ sudo xcodebuild -license accept
 ## Homebrew setup
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-brew tap homebrew/cask
-brew tap homebrew/cask-versions
-brew tap homebrew/cask-drivers
-brew tap homebrew/cask-fonts
+brew tap homebrew/cask --force
 ```
 
 ## Terminal / shell setup
 ```
 # Nerd fonts
-brew install --cask font-fira-code-nerd-font font-ubuntu-mono-nerd-font
+brew install --cask font-fira-code-nerd-font font-ubuntu-mono-nerd-font font-lexend
 
 # ZSH shell & zim framework setup
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
@@ -156,7 +152,7 @@ brew install --cask Brave-browser
 brew install --cask Keka
 
 # Open source Firefox (web browser) fork
-brew install --cask Waterfox-current
+brew install --cask waterfox
 
 # Disk usage utility (visualizer)
 brew install --cask Disk-Inventory-X
