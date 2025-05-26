@@ -22,7 +22,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 *> Enter same passphrase again:* **[PRESS ENTER]**
 #### Copy
 ```bash
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 #### Paste
 https://github.com/settings/keys
